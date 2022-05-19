@@ -9,6 +9,15 @@ header {
     height: 100px;
     width: 100%;
 }
+/* body */
+body{
+    background-color: #333;
+    color: aliceblue;
+    font-family: sans-serif;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
 /* Footer */
 
 footer{
@@ -49,28 +58,25 @@ li.lista:hover{
 
 
 /* Titulo */
-h1 {
+.header h1{
     font-family: roboto;
-    text-align: center;
+    font-size: 30px;
+    text-align: left;
+    text-shadow: 1px 2px 4px white;
+    margin-left: 15px;
     line-height: 115px;
-    color: aliceblue;
+    color:black;
 }
 
 /* Logo */
-.logo{
-    height: 50px;
+.header img{
+    height: 100px;
     width: auto;
     float: left;
-    margin-top: -36px;
+    margin-left: 39%;
+    margin-top: -100px;
 }
-body{
-    background-color: #333;
-    color: aliceblue;
-    font-family: sans-serif;
-    position: relative;
-    padding-bottom: 3em;
-    min-height: 100vh;
-}
+
 /* Redes sociales */
 .social-bar{
     position: fixed;
@@ -125,9 +131,9 @@ main{
 .call{
     float: right;
     width: 48%;
-    margin-right: 60px;
+    margin-right: 80px;
     margin-top: 30px;
-    background-color: rgba(0, 0, 0, 0.575);
+    background-color: rgba(255, 255, 255, 0.479);
     height: 200px;
     border-radius: 8px;
 }
@@ -135,7 +141,7 @@ main{
 .call h2{
     text-align: center;
     font-size: 25px;
-    color: #369681;
+    color: black;
     padding: 15px;
     margin-bottom: -15px;
 }
@@ -145,6 +151,7 @@ main{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 6px;
+    color: black;
 }
 .call a{
     width: 80px;
@@ -165,7 +172,7 @@ main{
 
 
 /* Servicios */
-h4{
+h4 #servicios{
     text-align: center;
     color: aliceblue;
     margin-bottom: 30px;
@@ -189,8 +196,15 @@ li.lista2{
     height: 600px;
     background: center fixed no-repeat url(./img/herreria.jpg);
     background-size: cover;
+    margin-bottom: 40px;
 }
 /* Agradecimiento y Consulta */
+
+h1{
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 form{
     margin: 0 auto;
@@ -258,6 +272,7 @@ p{
 }
 
 .contacto h4{
+    text-align: center;
     font-size: 22px;
     margin-bottom: 30px;
 }
