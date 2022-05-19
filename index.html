@@ -20,8 +20,7 @@
                 <img src="./img/logo1.png" alt="Logo Herreria LyJ">
             </a>
         </div>
-    </header> 
-    <br>
+    </header> <br>
     <!-- barra de NAVegacion -->
 <nav>
     <ul class="lista1">
@@ -32,7 +31,7 @@
     </ul>
 </nav>
 <br>
-
+<!-- MAIN -->
 <main>
     <div class="call">
         <h2>Herreria L&J</h2>
@@ -43,31 +42,46 @@
 
 
 <!-- Servicios -->
-<h4 id="servicios">Servicios</h4>
+<div class="servicios">
+    <h4>Servicios</h4>
 <br>
-<ul type="disc" class="servicios">
-    <li class="lista2">Corte Láser CNC de todo tipo de materiales</li>
-    <li class="lista2">Plegado de chapas de hasta 2,5 m.</li>
-    <li class="lista2">Maquinaria de control numérico para el mecanizado   de todo tipo de materiales.</li>
+<ul type="disc" class="lista">
+    <li>Corte Láser CNC de todo tipo de materiales</li>
+    <li>Plegado de chapas de hasta 2,5 m.</li>
+    <li>Maquinaria de control numérico para el mecanizado   de todo tipo de materiales.</li>
 </ul>
-<ul class="servicios">
-    <li class="lista2">Soldado y armado de estructuras</li>
-    <li class="lista2">Asistencia en diseño</li>
-    <li class="lista2">Asistencia técnica</li>
+<ul class="lista">
+    <li>Soldado y armado de estructuras</li>
+    <li>Asistencia en diseño</li>
+    <li>Asistencia técnica</li>
 </ul>
+</div>
 <br><br>
 <!-- Imagen de Herrero -->
 <div class="herrero"></div>
 
+<!-- Opiniones -->
+
+<section class="opiniones">
+    <h3>Dejanos tu opinion sobre Herreria L&J</h3>
+    <p>Tu reseña es pública, por eso, ¡no incluyas material confidencial o de total privacidad!</p>
+    <br>
+    <form action="enviar.php" method="post" enctype="text/plain" class="opinion">
+        <textarea name="OPINIONES"  placeholder="Escribe.." cols="30" rows="10"></textarea>
+        <input type="submit" class="btn btn-green" value="Enviar">
+        <input type="reset" class="btn btn-green" value="Limpiar">
+    </form>
+</section>
+
+<article></article>
+
 <!-- Agradecimiento -->
-<h1>¡Gracias por visitarnos!</h1>
-<br>
-<p>Dejá tu consulta aca abajo</p>
-<form action="enviar.php" method="post" enctype="text/plain">
-    <textarea name="Deja tu consulta" placeholder="Escribe tu consulta.." cols="30" rows="10"></textarea>
-    <input type="button" class="btn btn-green" value="Enviar">
-    <input type="reset" class="btn btn-green" value="Borrar">
-</form>
+<div class="agradecimiento">
+    <h1>¡Gracias por visitarnos!</h1>
+    <p>para contactarnos haz click <a href="./pages/contacto.html">aca</a></p>
+</div>
+
+
 <!-- Redes sociales -->
 <div class="social-bar">
     <a href="https://www.facebook.com/Herrería-LJ-1402611139950960/" class="icon icon-facebook" target="_blank"></a>

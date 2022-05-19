@@ -32,9 +32,8 @@ footer{
 /* Lista de busqueda */
 nav{
     background-color:#246355 ;
-    margin: -20px;
+    margin: -18px;
     margin-right: 0px;
-
 }
 .color{
     color: aliceblue;
@@ -136,6 +135,7 @@ main{
     background-color: rgba(255, 255, 255, 0.479);
     height: 200px;
     border-radius: 8px;
+    padding: 10px;
 }
 
 .call h2{
@@ -152,6 +152,7 @@ main{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 6px;
     color: black;
+    padding: 15px;
 }
 .call a{
     width: 80px;
@@ -172,20 +173,20 @@ main{
 
 
 /* Servicios */
-h4 #servicios{
+.servicios h4{
     text-align: center;
     color: aliceblue;
     margin-bottom: 30px;
     margin-top: 80px;
     font-size: 20px;
 }
-ul.servicios{
+ul.lista{
     display: grid;
     grid-template-columns: 200px 200px 300px;
     grid-template-rows: 150px;
     justify-content: center;
 }
-li.lista2{
+.servicios li{
     color: aliceblue;
     margin: 20px;
     padding: 3px;
@@ -198,62 +199,110 @@ li.lista2{
     background-size: cover;
     margin-bottom: 40px;
 }
-/* Agradecimiento y Consulta */
+/* OPINIONES */
+section .opiniones{
+    width: 80%;
+    height: 450px;
+    margin-left: 130px;
+    background-color: #333;
+}
 
-h1{
+.opiniones h3{
     text-align: center;
     font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+.opiniones p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
 }
 
 form{
     margin: 0 auto;
     width: 300px;
 }
-textarea{
+
+.opinion textarea{
+    width: 870px;
+    height: 220px;
+    margin-left: -300px;
+    border: 2px solid transparent aliceblue;
+    padding: 0.5em;
+    margin-bottom: 0px;
+    border-radius: 10px;
     color: aliceblue;
     font-size: 16px;
     font-family:sans-serif;
     background-color: #333;
-    border-radius: 10px;
-    border: 2px solid transparent aliceblue;
-    padding: 0.5em;
-    margin-bottom: 0px;
+    transition: all .5s;
 }
+
 textarea:hover{
-cursor: pointer;
-background-color: rgb(36, 34, 34);
-}
-/* Boton de enviar y borrar */
-input{
+    cursor: pointer;
+    background-color: rgb(36, 34, 34);
+    padding: 20px;
+    }
+
+.opiniones input{
     width: 100px;
     height: 50px;
 }
+/* Boton de enviar y limpiar*/
+.opinion input{
+    width: 100px;
+    height: 50px;
+}
+
 .btn{
-    text-align: center;
     margin: 17px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-}
-.btn-green{
-    color: white;
-    background-color: #246355;
-}
-.btn-green:hover{
-    background-color: #369681;
-}
-.btn-green:active{
-    background-color: #246355;
-}
-/* Deja tu consulta aca abajo */
-p{
-    text-align: center;
-    margin: 20px;
-    margin-left: -20px;
-    font-family: 'Fjalla One', sans-serif;
+    background-color:#333;
+    padding: 3px;
     color: aliceblue;
+    border-radius: 6px;
+    border: 1px solid gainsboro;
+    margin-bottom: 20px;
+    font-family: Calibri;
+    font-size: 17px;
+    transition: all .5s;
+}
+.btn:hover{
+    background-color: #012921;
+}
+
+
+
+    /* Imagen de otro herrero */
+article{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background:fixed no-repeat url(./img/herrero.png);
+    background-size: cover;
+}
+
+
+/* Agradecimiento */
+.agradecimiento{
+    width: 100%;
+    height: 200px;
+}
+
+.agradecimiento h1{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.agradecimiento p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.agradecimiento a{
+    text-decoration: none;
+    color: #369681;
 }
 
 
@@ -277,8 +326,9 @@ p{
     margin-bottom: 30px;
 }
 
-.contacto-form{
+.contacto input{
     width: 100%;
+    height: 50px;
     background-color:#0F362D;
     padding: 3px;
     color: aliceblue;
@@ -290,31 +340,40 @@ p{
     transition: all .5s;
 }
 
-.contacto-form:hover{
+.contacto input:hover{
     background-color: #012921;
     padding: 10px ;
 }
 
-.contacto-text{
+.contacto label{
     margin-left: 140px;
     font-family: sans-serif;
     font-size: 18px;
 }
 
-.contacto-textarea{
-    margin-left: 60px;
+.contacto textarea{
+    font-family: sans-serif;
+    padding: 5px;
+    color: aliceblue;
+    background-color: #012921;
+    border-radius: 6px;
+    border: 1px solid gainsboro;
+    width: 300px;
+    margin-left: 50px;
     margin-top: 15px;
     transition: all .5s;
 }
-.contacto-textarea:hover{
+.contacto textarea:hover{
     padding: 15px;
-
 }
 
 #enviar{
-    margin-left: 85px;
-    margin-right: 0;
+    margin-left: 5px;
 }
+#limpiar{
+    margin-left: 5px;
+}
+
 
 
 /* estilo SOBRE NOSOTROS */

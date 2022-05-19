@@ -14,13 +14,13 @@
 <body>
 <!-- Header, Logo, Titulo -->
 <header class="header">
-    <h1>Herreria L&J</h1>
-    <div class="logo"> 
-        <a href="#">
-            <img src="../img/logo1.png" alt="Logo Herreria LyJ">
-        </a>
-    </div>
-</header> <br>
+        <h1>Herreria L&J</h1>
+        <div class="logo"> 
+            <a href="#">
+                <img src="../img/logo1.png" alt="Logo Herreria LyJ">
+            </a>
+        </div>
+    </header> <br>
 <!-- barra de NAVegacion -->
 <nav>
     <ul class="lista1">
@@ -40,19 +40,19 @@
     <!-- Formulario -->
     <form class="contacto" action="enviar.php" method="post" enctype="text/plain">
         <h4>¡Contáctanos!</h4>
-        <input class="contacto-form" type="text" name="name" placeholder=" Ingrese su Nombre">
+        <input type="text" name="name" placeholder=" Ingrese su Nombre">
         <br><br>
-        <input class="contacto-form" type="text" name="Apellido" placeholder=" Ingrese su Apellido">
+        <input type="text" name="Apellido" placeholder=" Ingrese su Apellido">
         <br><br>
-        <input class="contacto-form" type="number" name="tel" placeholder=" Ingrese su Telefono" required>
+        <input type="number" name="tel" placeholder=" Ingrese su Telefono" required>
         <br><br>
-        <input class="contacto-form" type="mail" name="mail" placeholder=" Ingrese su Correo" required>
+        <input type="mail" name="mail" placeholder=" Ingrese su Correo" required>
         <br><br>
-        <label class="contacto-text">¿Que desea?</label><br>
-        <textarea class="contacto-textarea" cols="30" rows="10" placeholder="Escribe..." required></textarea>
+        <label>¿Que desea?</label><br>
+        <textarea cols="30" rows="10" placeholder="Escribe..." required></textarea>
         <br>
         <input type="submit" class="btn btn-green" id="enviar" value="Enviar">
-        <input type="reset" class="btn btn-green" value="Limpiar datos">
+        <input type="reset" class="btn btn-green" id="limpiar" value="Limpiar">
     </form>
 
  <!-- Footer -->
