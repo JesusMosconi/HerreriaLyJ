@@ -5,33 +5,13 @@
 /* ESTILOS GENERALES */
 /* Header */
 header {
-    background-color: #246355;
-    height: 100px;
-    width: 100%;
-}
-/* body */
-body{
-    background-color: #333;
-    color: aliceblue;
-    font-family: sans-serif;
-    position: relative;
-    padding-bottom: 3em;
-    min-height: 100vh;
-}
-/* Footer */
-
-footer{
-    background-color: #246355;
-    padding: 1em 0;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
+    background-image: linear-gradient(to right top #2a6a71, #0e496c, #08556f, #166071, #2a6a71);
+    height: 145px;
     width: 100%;
 }
 
 /* Lista de busqueda */
 nav{
-    background-color:#246355 ;
     margin: -18px;
     margin-right: 0px;
 }
@@ -40,32 +20,41 @@ nav{
     font-size: small;
     text-decoration: none;
 }
-ul.lista1{
+
+ul.nav{
     color: white;
     list-style-type: none;
     display: flex;
-    justify-content: right;
-    
+    justify-content: right; 
 }
-li.lista{
+
+.nav li{
    padding: 15px;
+   margin-top: 96px;
 }
-li.lista:hover{
-    background-color: #369681;
+.nav li:hover{
+    background-color: #08556f;
+}
+/* body */
+body{
+    background-image: linear-gradient(to right top, #2a6a71, #166071, #08556f, #0e496c, #1d3d65 );
+    font-family: sans-serif;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+/* Footer */
+
+footer{
+    background-image: linear-gradient(to right top #2a6a71, #0e496c, #08556f, #166071, #2a6a71);
+    padding: 1em 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: aliceblue;
 }
 
-
-
-/* Titulo */
-.header h1{
-    font-family: roboto;
-    font-size: 30px;
-    text-align: left;
-    text-shadow: 1px 2px 4px white;
-    margin-left: 15px;
-    line-height: 115px;
-    color:black;
-}
 
 /* Logo */
 .header img{
@@ -73,7 +62,7 @@ li.lista:hover{
     width: auto;
     float: left;
     margin-left: 39%;
-    margin-top: -100px;
+    margin-top: 30px;
 }
 
 /* Redes sociales */
@@ -125,6 +114,7 @@ main{
     height: calc(100vh - 80px);
     background:fixed no-repeat url(./img/herrero1.jpg);
     background-size: cover;
+    margin-top: -37px;
 }
 
 .call{
@@ -141,7 +131,7 @@ main{
 .call h2{
     text-align: center;
     font-size: 25px;
-    color: black;
+    color: aliceblue;
     padding: 15px;
     margin-bottom: -15px;
 }
@@ -160,14 +150,13 @@ main{
     padding: 10px 20px;
     margin-left: 30px;
     border-radius: 5px;
-    background-color: #369681;
-    color: #fff;
+    background-color: #0e496c;
+    color: aliceblue;
     text-decoration: none;
 }
 
 .call a:hover{
-    background-color: #246355;
-    color: #369681;
+    background-color: #166071;
 }
 
 
@@ -212,11 +201,13 @@ section .opiniones{
     font-size: 25px;
     margin-top: 10px;
     font-family: sans-serif;
+    color: aliceblue;
 }
 .opiniones p{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    color: aliceblue;
 }
 
 form{
@@ -228,20 +219,20 @@ form{
     width: 870px;
     height: 220px;
     margin-left: -300px;
-    border: 2px solid transparent aliceblue;
+    border: 2px solid aliceblue;
     padding: 0.5em;
     margin-bottom: 0px;
     border-radius: 10px;
     color: aliceblue;
     font-size: 16px;
     font-family:sans-serif;
-    background-color: #333;
+    background:transparent;
     transition: all .5s;
 }
 
 textarea:hover{
     cursor: pointer;
-    background-color: rgb(36, 34, 34);
+    background-color:#08556f;
     padding: 20px;
     }
 
@@ -257,18 +248,18 @@ textarea:hover{
 
 .btn{
     margin: 17px;
-    background-color:#333;
+    background:transparent;
     padding: 3px;
     color: aliceblue;
     border-radius: 6px;
-    border: 1px solid gainsboro;
+    border: 1px solid aliceblue;
     margin-bottom: 20px;
     font-family: Calibri;
     font-size: 17px;
     transition: all .5s;
 }
 .btn:hover{
-    background-color: #012921;
+    background-color: #166071;
 }
 
 
@@ -293,16 +284,18 @@ article{
     text-align: center;
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
 }
 .agradecimiento p{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     margin-top: 30px;
+    color: aliceblue;
 }
 .agradecimiento a{
     text-decoration: none;
-    color: #369681;
+    color: black;
 }
 
 
@@ -310,10 +303,10 @@ article{
 /* Formulario de registro */
 .contacto{
     width: 400px;
-    background-color: #0F362D;
+    background:transparent;
     padding: 30px;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 10px;
     margin-bottom: 60px;
     border-radius: 6px;
     font-family: sans-serif;
@@ -324,12 +317,13 @@ article{
     text-align: center;
     font-size: 22px;
     margin-bottom: 30px;
+    color: aliceblue;
 }
 
 .contacto input{
     width: 100%;
     height: 50px;
-    background-color:#0F362D;
+    background:transparent;
     padding: 3px;
     color: aliceblue;
     border-radius: 6px;
@@ -341,7 +335,7 @@ article{
 }
 
 .contacto input:hover{
-    background-color: #012921;
+    background-color: #0e496c;
     padding: 10px ;
 }
 
@@ -349,13 +343,14 @@ article{
     margin-left: 140px;
     font-family: sans-serif;
     font-size: 18px;
+    color: aliceblue;
 }
 
 .contacto textarea{
     font-family: sans-serif;
     padding: 5px;
     color: aliceblue;
-    background-color: #012921;
+    background:transparent;
     border-radius: 6px;
     border: 1px solid gainsboro;
     width: 300px;
@@ -385,9 +380,9 @@ article{
     width: 100%;
     height: 400px;
     padding: 100px 100px;
-    margin-top: 70px;
+    margin-top: -20px;
     line-height: 1.5;
-    background: #0f362d7e;
+    background: transparent;
 }
 /* Imagen */
 #imagen{
@@ -395,7 +390,7 @@ article{
     height: auto;
     margin-right: 50px;
     margin-left: -50px;
-    border: 3px solid #369681;
+    border: 3px solid transparent;
     border-radius: 8px;
 }
 /* Texto */
@@ -403,6 +398,7 @@ article{
     font-family: sans-serif;
     font-size: 20px;
     text-align: left;
+    color: aliceblue;
 }
 
 /* estilo MIS TRABAJOS */
@@ -412,6 +408,7 @@ article{
     grid-template-rows: 100px 100px 100px;
     grid-template-areas: "img1 img2 img3 img4";                  
     margin: 50px;
+    margin-top: -50px;
     margin-left: 50px;
 }
 .seccion2{
@@ -451,7 +448,7 @@ article{
     top: 0;
     width: 100%;
     height: 100%;
-    background: #0f362da4;
+    background: #0e4a6c94;
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
@@ -498,6 +495,7 @@ article{
     margin-left: 40px;
     margin-top: 40px;
     font-size: 25px;
+    color: aliceblue;
 }
 
 .mapa{
