@@ -19,7 +19,16 @@ nav{
     color: aliceblue;
     font-size: small;
     text-decoration: none;
+    animation-name: nav;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
 }
+@keyframes nav{
+    0%{
+        opacity: 0;
+    }
+}
+
 
 ul.nav{
     color: white;
@@ -63,7 +72,18 @@ footer{
     float: left;
     margin-left: 39%;
     margin-top: 30px;
+    animation-name: Logo;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
 }
+@keyframes Logo{
+    0%{
+        margin-left: 0px;
+        opacity: 0;
+    }
+}
+
+
 
 /* Redes sociales */
 .social-bar{
@@ -126,7 +146,19 @@ main{
     height: 200px;
     border-radius: 8px;
     padding: 10px;
+    animation-name: Call;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
 }
+@keyframes Call{
+    0%{
+        opacity: 0;
+        margin-right: 700px;
+    }
+}
+
+
+
 
 .call h2{
     text-align: center;
@@ -184,7 +216,7 @@ ul.lista{
 .herrero{
     width: 100%;
     height: 600px;
-    background:fixed no-repeat url(./img/herrero2.jpg.opdownload);
+    background:fixed no-repeat url(./img/herrero2.jpg);
     background-size: cover;
     margin-bottom: 40px;
 }
