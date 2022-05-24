@@ -20,7 +20,7 @@ nav{
     font-size: small;
     text-decoration: none;
     animation-name: nav;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
 }
 @keyframes nav{
@@ -40,9 +40,21 @@ ul.nav{
 .nav li{
    padding: 15px;
    margin-top: 96px;
+   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
+.nav li:after{
+    content: "";
+    display: block;
+    background-color: aliceblue;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .6s;
+}
+
 .nav li:hover{
-    background-color: #08556f;
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 /* body */
 body{
@@ -72,6 +84,7 @@ footer{
     float: left;
     margin-left: 39%;
     margin-top: 30px;
+    transition: height 1s;
     animation-name: Logo;
     animation-iteration-count: 1;
     animation-duration: 2s;
@@ -81,6 +94,10 @@ footer{
         margin-left: 0px;
         opacity: 0;
     }
+}
+
+.header img:hover{
+    height: 110px;
 }
 
 
@@ -145,6 +162,7 @@ main{
     background-color: #0e4a6c98;
     height: 200px;
     border-radius: 8px;
+    transition: padding 0.5s;
     padding: 10px;
     animation-name: Call;
     animation-iteration-count: 1;
@@ -155,6 +173,10 @@ main{
         opacity: 0;
         margin-right: 700px;
     }
+}
+
+.call:hover{
+    padding: 20px;
 }
 
 
@@ -252,6 +274,7 @@ form{
     height: 220px;
     margin-left: -300px;
     border: 2px solid aliceblue;
+    cursor: pointer;
     padding: 0.5em;
     margin-bottom: 0px;
     border-radius: 10px;
@@ -263,7 +286,6 @@ form{
 }
 
 textarea:hover{
-    cursor: pointer;
     background-color:#08556f;
     padding: 20px;
     }
@@ -436,11 +458,11 @@ article{
 /* estilo MIS TRABAJOS */
 .seccion1{
     display: grid;
-    grid-template-columns: (4, 1fr);
+    grid-template-columns: (4, 100px);
     grid-template-rows: 100px 100px 100px;
     grid-template-areas: "img1 img2 img3 img4";                  
     margin: 50px;
-    margin-top: -50px;
+    margin-top: -40px;
     margin-left: 50px;
 }
 .seccion2{
