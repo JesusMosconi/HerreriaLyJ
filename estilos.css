@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 /* ESTILOS GENERALES */
 /* Header */
 header {
@@ -11,11 +12,12 @@ header {
 }
 
 /* Lista de busqueda */
-nav{
+nav {
     margin: -18px;
     margin-right: 0px;
 }
-.color{
+
+.color {
     color: aliceblue;
     font-size: small;
     text-decoration: none;
@@ -23,26 +25,28 @@ nav{
     animation-duration: 5s;
     animation-iteration-count: 1;
 }
-@keyframes nav{
-    0%{
+
+@keyframes nav {
+    0% {
         opacity: 0;
     }
 }
 
 
-ul.nav{
+ul.nav {
     color: white;
     list-style-type: none;
     display: flex;
-    justify-content: right; 
+    justify-content: right;
 }
 
-.nav li{
-   padding: 15px;
-   margin-top: 96px;
-   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+.nav li {
+    padding: 15px;
+    margin-top: 96px;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
-.nav li:after{
+
+.nav li:after {
     content: "";
     display: block;
     background-color: aliceblue;
@@ -53,20 +57,22 @@ ul.nav{
     transition: clip-path .6s;
 }
 
-.nav li:hover{
+.nav li:hover {
     --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
+
 /* body */
-body{
-    background-image: linear-gradient(to right top, #2a6a71, #166071, #08556f, #0e496c, #1d3d65 );
+body {
+    background-image: linear-gradient(to right top, #2a6a71, #166071, #08556f, #0e496c, #1d3d65);
     font-family: sans-serif;
     position: relative;
     padding-bottom: 3em;
     min-height: 100vh;
 }
+
 /* Footer */
 
-footer{
+footer {
     background-image: linear-gradient(to right top #2a6a71, #0e496c, #08556f, #166071, #2a6a71);
     padding: 1em 0;
     text-align: center;
@@ -78,7 +84,7 @@ footer{
 
 
 /* Logo */
-.header img{
+.header img {
     height: 100px;
     width: auto;
     float: left;
@@ -89,21 +95,22 @@ footer{
     animation-iteration-count: 1;
     animation-duration: 2s;
 }
-@keyframes Logo{
-    0%{
+
+@keyframes Logo {
+    0% {
         margin-left: 0px;
         opacity: 0;
     }
 }
 
-.header img:hover{
+.header img:hover {
     height: 110px;
 }
 
 
 
 /* Redes sociales */
-.social-bar{
+.social-bar {
     position: fixed;
     right: 0;
     top: 38%;
@@ -113,8 +120,9 @@ footer{
     align-items: flex-end;
     z-index: 100;
 }
+
 /* Icono */
-.icon{
+.icon {
     color: white;
     text-decoration: none;
     display: flex;
@@ -122,22 +130,28 @@ footer{
     padding: .7rem;
     transition: all .5s;
 }
-.icon-facebook{
+
+.icon-facebook {
     background-color: #2E406E;
 }
-.icon-instagram{
+
+.icon-instagram {
     background-color: #3F60A5;
 }
-.icon-whatsapp{
+
+.icon-whatsapp {
     background-color: #37B839;
 }
-.icon:first-child{
+
+.icon:first-child {
     border-radius: 1rem 0 0 0;
 }
-.icon:last-child{
+
+.icon:last-child {
     border-radius: 0 0 0 1rem;
 }
-.icon:hover{
+
+.icon:hover {
     padding-right: 3rem;
     border-radius: 1rem 0 0 1rem;
     box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
@@ -146,15 +160,15 @@ footer{
 
 /* ESTILOS INDEX */
 /* Texto presentacion */
-main{
+main {
     width: 100%;
     height: calc(100vh - 80px);
-    background:fixed no-repeat url(./img/herrero1.jpg);
+    background: fixed no-repeat url(./img/herrero1.jpg);
     background-size: cover;
     margin-top: -37px;
 }
 
-.call{
+.call {
     float: right;
     width: 48%;
     margin-right: 80px;
@@ -168,21 +182,22 @@ main{
     animation-iteration-count: 1;
     animation-duration: 3s;
 }
-@keyframes Call{
-    0%{
+
+@keyframes Call {
+    0% {
         opacity: 0;
         margin-right: 700px;
     }
 }
 
-.call:hover{
+.call:hover {
     padding: 20px;
 }
 
 
 
 
-.call h2{
+.call h2 {
     text-align: center;
     font-size: 25px;
     color: aliceblue;
@@ -190,7 +205,7 @@ main{
     margin-bottom: -15px;
 }
 
-.call p{
+.call p {
     font-size: 15px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -198,7 +213,8 @@ main{
     color: aliceblue;
     padding: 15px;
 }
-.call a{
+
+.call a {
     width: 80px;
     height: 40px;
     padding: 10px 20px;
@@ -209,67 +225,72 @@ main{
     text-decoration: none;
 }
 
-.call a:hover{
+.call a:hover {
     background-color: #166071;
 }
 
 
 
 /* Servicios */
-.servicios h4{
+.servicios h4 {
     text-align: center;
     color: aliceblue;
     margin-bottom: 30px;
     margin-top: 80px;
     font-size: 20px;
 }
-ul.lista{
+
+ul.lista {
     display: grid;
     grid-template-columns: 200px 200px 300px;
     grid-template-rows: 150px;
     justify-content: center;
 }
-.servicios li{
+
+.servicios li {
     color: aliceblue;
     margin: 20px;
     padding: 3px;
 }
+
 /* Imagen de Herrero */
-.herrero{
+.herrero {
     width: 100%;
     height: 600px;
-    background:fixed no-repeat url(./img/herrero2.jpg);
+    background: fixed no-repeat url(./img/herrero2.jpg);
     background-size: cover;
     margin-bottom: 40px;
 }
+
 /* OPINIONES */
-section .opiniones{
+section .opiniones {
     width: 80%;
     height: 450px;
     margin-left: 130px;
     background-color: #333;
 }
 
-.opiniones h3{
+.opiniones h3 {
     text-align: center;
     font-size: 25px;
     margin-top: 10px;
     font-family: sans-serif;
     color: aliceblue;
 }
-.opiniones p{
+
+.opiniones p {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     color: aliceblue;
 }
 
-form{
+form {
     margin: 0 auto;
     width: 300px;
 }
 
-.opinion textarea{
+.opinion textarea {
     width: 870px;
     height: 220px;
     margin-left: -300px;
@@ -280,29 +301,26 @@ form{
     border-radius: 10px;
     color: aliceblue;
     font-size: 16px;
-    font-family:sans-serif;
-    background:transparent;
+    font-family: sans-serif;
+    background: transparent;
     transition: all .5s;
 }
 
-textarea:hover{
-    background-color:#08556f;
+textarea:hover {
+    background-color: #08556f;
     padding: 20px;
-    }
+}
 
-.opiniones input{
+.opiniones input {
     width: 100px;
     height: 50px;
 }
+
 /* Boton de enviar y limpiar*/
-.opinion input{
-    width: 100px;
-    height: 50px;
-}
 
-.btn{
+.btn {
     margin: 17px;
-    background:transparent;
+    background: transparent;
     padding: 3px;
     color: aliceblue;
     border-radius: 6px;
@@ -312,52 +330,55 @@ textarea:hover{
     font-size: 17px;
     transition: all .5s;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #166071;
 }
 
 
 
-    /* Imagen de otro herrero */
-article{
+/* Imagen de otro herrero */
+article {
     width: 100%;
     height: calc(100vh - 80px);
-    background:center fixed no-repeat url(./img/herrero3.jpg);
+    background: center fixed no-repeat url(./img/herrero3.jpg);
     background-size: cover;
 }
 
 
 /* Agradecimiento */
-.agradecimiento{
+.agradecimiento {
     width: 100%;
     height: 200px;
 }
 
-.agradecimiento h1{
+.agradecimiento h1 {
     margin-top: 40px;
     text-align: center;
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: aliceblue;
 }
-.agradecimiento p{
+
+.agradecimiento p {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     margin-top: 30px;
     color: aliceblue;
 }
-.agradecimiento a{
-    
+
+.agradecimiento a {
+
     color: aliceblue;
 }
 
 
 /* ESTILOS CONTACTO */
 /* Formulario de registro */
-.contacto{
+.contacto {
     width: 400px;
-    background:transparent;
+    background: transparent;
     padding: 30px;
     margin: auto;
     margin-top: 10px;
@@ -367,17 +388,17 @@ article{
     box-shadow: 7px 13px 37px #000;
 }
 
-.contacto h4{
+.contacto h4 {
     text-align: center;
     font-size: 22px;
     margin-bottom: 30px;
     color: aliceblue;
 }
 
-.contacto input{
+.contacto input {
     width: 100%;
     height: 50px;
-    background:transparent;
+    background: transparent;
     padding: 3px;
     color: aliceblue;
     border-radius: 6px;
@@ -388,23 +409,22 @@ article{
     transition: all .5s;
 }
 
-.contacto input:hover{
-    background-color: #0e496c;
-    padding: 10px ;
+.contacto input:hover {
+    background-color: #166071;
 }
 
-.contacto label{
+.contacto label {
     margin-left: 140px;
     font-family: sans-serif;
     font-size: 18px;
     color: aliceblue;
 }
 
-.contacto textarea{
+.contacto textarea {
     font-family: sans-serif;
     padding: 5px;
     color: aliceblue;
-    background:transparent;
+    background: transparent;
     border-radius: 6px;
     border: 1px solid gainsboro;
     width: 300px;
@@ -412,14 +432,16 @@ article{
     margin-top: 15px;
     transition: all .5s;
 }
-.contacto textarea:hover{
-    padding: 15px;
+
+.contacto textarea:hover {
+    padding: 10px;
 }
 
-#enviar{
+#enviar {
     margin-left: 5px;
 }
-#limpiar{
+
+#limpiar {
     margin-left: 5px;
 }
 
@@ -427,7 +449,7 @@ article{
 
 /* estilo SOBRE NOSOTROS */
 /* Cuadro */
-.nosotros{ 
+.nosotros {
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -438,8 +460,9 @@ article{
     line-height: 1.5;
     background: transparent;
 }
+
 /* Imagen */
-#imagen{
+#imagen {
     width: 25%;
     height: auto;
     margin-right: 50px;
@@ -447,8 +470,9 @@ article{
     border: 3px solid transparent;
     border-radius: 8px;
 }
+
 /* Texto */
-#texto{
+#texto {
     font-family: sans-serif;
     font-size: 20px;
     text-align: left;
@@ -456,16 +480,17 @@ article{
 }
 
 /* estilo MIS TRABAJOS */
-.seccion1{
+.seccion1 {
     display: grid;
     grid-template-columns: (4, 100px);
     grid-template-rows: 100px 100px 100px;
-    grid-template-areas: "img1 img2 img3 img4";                  
+    grid-template-areas: "img1 img2 img3 img4";
     margin: 50px;
     margin-top: -40px;
     margin-left: 50px;
 }
-.seccion2{
+
+.seccion2 {
     display: grid;
     grid-template-columns: (4, 1fr);
     grid-template-rows: 100px 100px 100px;
@@ -475,14 +500,15 @@ article{
     margin-bottom: 300px;
     margin-left: 50px;
 }
-.contenedor{
+
+.contenedor {
     width: 100%;
     min-height: 400px;
     align-items: center;
     margin-top: 100px;
 }
 
-.contenedor figure{
+.contenedor figure {
     position: relative;
     width: 250px;
     height: 350px;
@@ -492,12 +518,13 @@ article{
     cursor: pointer;
 }
 
-.contenedor figure img{
+.contenedor figure img {
     width: 130%;
     height: 100%;
     transition: all 500ms ease-out;
 }
-.contenedor figure .capa{
+
+.contenedor figure .capa {
     position: absolute;
     top: 0;
     width: 100%;
@@ -509,28 +536,29 @@ article{
     text-align: center;
 }
 
-.contenedor figure:hover > .capa{
+.contenedor figure:hover>.capa {
     opacity: 1;
     visibility: visible;
 }
 
-.contenedor figure:hover > .capa h3{
+.contenedor figure:hover>.capa h3 {
     margin-top: 70px;
     margin-bottom: 15px;
 }
 
-.contenedor figure:hover > img{
+.contenedor figure:hover>img {
     transform: scale(1.3);
 }
 
-.contenedor figure .capa h3{
+.contenedor figure .capa h3 {
     color: aliceblue;
     font-weight: 400px;
     margin-bottom: 120px;
     margin-top: 30px;
     transition: all 500ms ease-out;
 }
-.contenedor figure .capa p{
+
+.contenedor figure .capa p {
     color: aliceblue;
     font-size: 15px;
     line-height: 1.5;
@@ -544,7 +572,7 @@ article{
 
 /* estilo Encontranos */
 
-.encontranos{
+.encontranos {
     text-align: center;
     margin-left: 40px;
     margin-top: 40px;
@@ -552,134 +580,345 @@ article{
     color: aliceblue;
 }
 
-.mapa{
+.mapa {
     margin: 50px;
     margin-left: 360px;
 }
 
-/* MEDIA QUERY  MOBIL */     /* MEDIA QUERY MOBIL */
 
-/* media query HEADER */
-@media only screen and (min-width:499px) and (max-width:599px){
-    h1{
-        display: flex;
-        justify-content: center;
-        font-size: 30px;
+
+/* MEDIA QUERY  MOBIL */
+/* MEDIA QUERY MOBIL */
+
+@media only screen and (min-width:499px) and (max-width:650px) {
+    /* media query HEADER */
+
+    .header {
+        margin-top: 10px;
+        height: 180px;
     }
 
-    .logo{
-        height: 35px;
+    .logo {
+        height: 20px;
         width: auto;
-        margin-left: 100px;
-        margin-top: -55px;
-    }
-    ul.lista1{
-        display: grid;
-        grid-template-columns: 120px 100px 100px 100px;
-        margin-right: 50px;
-    }
-    
-    .color{
-        font-size: 10px;
-        text-align: center;
-        margin: 5px;
     }
 
+    .nav li {
+        margin-top: 120px;
+    }
+
+    .color {
+        font-size: 11px;
+        margin: 10px;
+    }
 
     /* media query SOCIAL BAR */
-    .social-bar{
+    .social-bar {
         font-size: 0.8rem;
     }
 
+    /* media query INDEX */
 
-/* media query INDEX */
-
-/* Tabla de horarios */
-    table{
-        font-size: small;
-        margin-left: 16px;
+    /* call */
+    .call {
+        height: auto;
     }
 
-/* servicios */
-
-    ul.servicios{
-        grid-template-columns: 100px 100px 250px;
-        grid-template-rows: 200px;
-        grid-gap: 15px;
+    /* servicios */
+    ul.lista {
+        width: auto;
+        display: grid;
+        grid-template-columns: 150px 150px 150px;
     }
-    li.lista2{
+
+    .lista li {
         color: aliceblue;
-        margin: 20px;
-        padding: 3px;
+        font-size: 12px;
     }
-    
 
+    /* Opiniones */
+    .opinion textarea {
+        margin-left: 0px;
+        width: 300px;
+    }
 
-/* media query GALERIA DE FOTOS */
-    .seccion1{
+    .opiniones input {
+        margin-left: 30px;
+    }
+
+    /* media query GALERIA DE FOTOS */
+    .seccion1 {
         display: flex;
         flex-direction: column;
-        margin-left: 130px;
-        margin-top: -30px;
+        margin: auto;
+        margin-left: 180px;
     }
-    .seccion2{
+
+    .seccion2 {
         display: flex;
         flex-direction: column;
-        margin-left: 130px;
-        margin-top: -30px;
-        margin-bottom: 50px;
+        margin: auto;
+        margin-left: 180px;
+    }
+
+    /* media query SOBRE NOSOTROS */
+    .nosotros {
+        height: 310px;
+    }
+
+    #texto {
+        margin-right: -55px;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    #imagen {
+        width: 40%;
+    }
+
+    /* media query CONTACTO */
+    .contacto {
+        width: 300px;
+        padding: 40px;
+        border-radius: 8px;
+    }
+
+    .contacto h4 {
+        font-size: 18px;
+    }
+
+    .contacto {
+        font-size: 15px;
+    }
+
+    .contacto label {
+        margin-left: 100px;
+        font-size: 17px;
+    }
+
+    .contacto textarea {
+        margin-left: 0px;
+    }
+
+    #enviar {
+        margin-left: 5px;
+        margin-right: 0;
+    }
+
+    /* media query ENCONTRANOS */
+    .encontranos {
+        font-size: 20px;
+    }
+
+    .mapa {
+        width: 420px;
+        margin-left: 100px;
+    }
+}
+/* MEDIA QUERY*/
+@media only screen and (min-width:651px) and (max-width:800px) {
+    /* media query HEADER */
+
+    .header {
+        margin-top: 10px;
+        height: 180px;
+    }
+
+    .logo {
+        height: 20px;
+        width: auto;
+    }
+
+    .nav li {
+        margin-top: 120px;
+    }
+
+    .color {
+        font-size: 11px;
+        margin: 10px;
+    }
+
+    /* media query SOCIAL BAR */
+    .social-bar {
+        font-size: 1rem;
+    }
+
+    /* Call */
+    .call {
+        height: auto;
+    }
+
+    /* Servicios */
+    ul.lista {
+        width: auto;
+        display: grid;
+        grid-template-columns: 150px 150px 250px;
+    }
+
+    .lista li {
+        font-size: 14px;
+    }
+
+    /* Opiniones */
+    .opinion textarea {
+        margin-left: -50px;
+        width: 400px;
+    }
+
+    .opiniones input {
+        margin-left: 30px;
+    }
+
+    /* media query SOBRE NOSOTROS */
+    .nosotros {
+        height: 310px;
+    }
+
+    #texto {
+        margin-right: -55px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+
+
+    /* media query GALERIA DE FOTOS */
+    .seccion1 {
+        display: grid;
+        grid-template-rows: 450px 300px;
+        grid-template-areas: "img1 img2"
+            "img3 img4";
 
     }
 
-/* media query SOBRE NOSOTROS */
+    .seccion2 {
+        display: grid;
+        grid-template-rows: 450px 200px;
+        grid-template-areas: "img5 img6"
+            "img7 img8";
 
-.nosotros{ 
-    height: 310px;
-}
+    }
 
-#texto{
-    margin-right: -55px;
-    font-size: 11px;
-    text-align: center;
-}
+    /* media query ENCONTRANOS */
+    .encontranos {
+        font-size: 20px;
+    }
 
-#imagen{
-    width: 50%;
-    border: 2px solid #369681;
-}
-
-/* media query CONTACTO */
-.contacto{
-    width: 300px;
-    padding: 40px;
-    border-radius: 8px;
-}
-.contacto h4{
-    font-size: 18px;
-}
-.contacto-form{
-    font-size: 15px;
-}
-.contacto-text{
-    margin-left: 100px;
-    font-size: 17px;
-}
-.contacto-textarea{
-    margin-left: 20px;
-}
-#enviar{
-    margin-left: 40px;
-    margin-right: 0;
+    .mapa {
+        width: 450px;
+        margin-left: 150px;
+    }
 }
 
+/* MEDIA QUERY */
+@media only screen and (min-width:801px) and (max-width:950px) {
 
-/* media query ENCONTRANOS */
-.encontranos{
-    font-size: 20px;
+    .header {
+        margin-top: 10px;
+        height: 180px;
+    }
+
+    .nav li {
+        margin-top: 120px;
+    }
+
+    /* Estilos index */
+    /* Call */
+    .opinion textarea {
+        margin-left: -160px;
+        width: 600px;
+    }
+
+    /* media query SOBRE NOSOTROS */
+    .nosotros {
+        height: 310px;
+    }
+
+    #texto {
+        margin-right: -50px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    /* media query GALERIA DE FOTOS */
+    .seccion1 {
+        margin-left: 100px;
+        display: grid;
+        grid-template-rows: 450px 300px;
+        grid-template-areas: "img1 img2"
+            "img3 img4";
+    }
+
+    .seccion2 {
+        margin-left: 100px;
+        display: grid;
+        grid-template-rows: 450px 200px;
+        grid-template-areas: "img5 img6"
+            "img7 img8";
+
+    }
+
+    /* media query ENCONTRANOS */
+    .encontranos {
+        font-size: 20px;
+    }
+
+    .mapa {
+        width: 450px;
+        margin-left: 220px;
+    }
+
 }
 
-.mapa{
-    width: 420px;
-    margin-left: 35px;
+/* MEDIA QUERY */
+@media only screen and (min-width:951px) and (max-width:1040px) {
+
+    .header {
+        margin-top: 10px;
+        height: 180px;
+    }
+
+    .nav li {
+        margin-top: 120px;
+    }
+
+    /* media query SOBRE NOSOTROS */
+
+    #texto {
+        margin-right: -50px;
+        font-size: 20px;
+        text-align: left;
+    }
 }
+
+@media only screen and (min-width:951px) and (max-width:1125px) {
+
+    /* Galeria de fotos */
+    .seccion1 {
+        margin-left: 180px;
+        display: grid;
+        grid-template-rows: 450px 300px;
+        grid-template-areas: "img1 img2"
+            "img3 img4";
+    }
+
+    .seccion2 {
+        margin-left: 180px;
+        display: grid;
+        grid-template-rows: 450px 200px;
+        grid-template-areas: "img5 img6"
+            "img7 img8";
+
+    }
+
+    /* media query ENCONTRANOS */
+    .encontranos {
+        font-size: 25px;
+    }
+
+    .mapa {
+        width: 550px;
+        margin-left: 280px;
+    }
+
 }
