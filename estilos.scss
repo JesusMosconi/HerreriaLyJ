@@ -1,11 +1,16 @@
-/* Variables de color */
+/* Variables */
 
-$colorfacebook: #2E406E;
-$colorinstagram: #3F60A5;
-$colorwhatsapp: #37B839;
-$colorhover: #08556f;
 $fondo: linear-gradient(to right top #2a6a71, #0e496c, #08556f, #166071, #2a6a71);
 $font: sans-serif;
+
+/* Mapa de colores */
+$mapcolor:(
+    facebook:#2E406E,
+    instagram:#3F60A5,
+    whatsapp:#37B839,
+    hover:#08556f,
+);
+
 
 * {
     padding: 0;
@@ -138,15 +143,15 @@ body {
     }
 
     .icon-facebook {
-        background-color: $colorfacebook;
+        background-color: map-get($mapcolor, facebook);
     }
 
     .icon-instagram {
-        background-color: $colorinstagram;
+        background-color: map-get($mapcolor, instagram);
     }
 
     .icon-whatsapp {
-        background-color: $colorwhatsapp;
+        background-color: map-get($mapcolor, whatsapp);
     }
 
     .icon:first-child {
@@ -219,7 +224,7 @@ main {
         }
 
         a:hover {
-            background-color: $colorhover;
+            background-color: map-get($mapcolor, hover);
         }
     }
 
@@ -343,7 +348,7 @@ form {
 }
 
 .btn:hover {
-    background-color: $colorhover;
+    background-color: map-get($mapcolor, hover);
 }
 
 
@@ -371,11 +376,10 @@ article {
     }
 
     p {
-        text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        @extend h1;
         font-size: 20px;
         margin-top: 30px;
-        color: aliceblue;
+        
     }
 
     a {
@@ -421,7 +425,7 @@ article {
     }
 
     input:hover {
-        background-color: $colorhover;
+        background-color: map-get($mapcolor, hover);
     }
 
     label {
@@ -446,7 +450,7 @@ article {
 
     textarea:hover {
         padding: 10px;
-        background-color: $colorhover;
+        background-color: map-get($mapcolor, hover);
     }
 }
 
@@ -494,25 +498,28 @@ article {
 
 
 /* estilo MIS TRABAJOS */
+
+@mixin secciones($margin, $margin-top, $margin-left){
+    margin: $margin;
+    margin-top: $margin-top;
+    margin-left: $margin-left;
+} 
+
 .seccion1 {
+    @include secciones(50px, -40px, 50px);
     display: grid;
     grid-template-columns: (4, 100px);
     grid-template-rows: 100px 100px 100px;
     grid-template-areas: "img1 img2 img3 img4";
-    margin: 50px;
-    margin-top: -40px;
-    margin-left: 50px;
 }
 
 .seccion2 {
+    @include secciones(50px, 150px, 50px);
     display: grid;
     grid-template-columns: (4, 1fr);
     grid-template-rows: 100px 100px 100px;
     grid-template-areas: "img5 img6 img7 img8";
-    margin: 50px;
-    margin-top: 150px;
     margin-bottom: 300px;
-    margin-left: 50px;
 }
 
 .contenedor {

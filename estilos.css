@@ -1,4 +1,5 @@
-/* Variables de color */
+/* Variables */
+/* Mapa de colores */
 * {
   padding: 0;
   margin: 0;
@@ -302,7 +303,7 @@ article {
   width: 100%;
   height: 200px;
 }
-.agradecimiento h1 {
+.agradecimiento h1, .agradecimiento p {
   margin-top: 40px;
   text-align: center;
   font-size: 30px;
@@ -310,11 +311,8 @@ article {
   color: aliceblue;
 }
 .agradecimiento p {
-  text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
   margin-top: 30px;
-  color: aliceblue;
 }
 .agradecimiento a {
   color: aliceblue;
@@ -418,24 +416,24 @@ article {
 
 /* estilo MIS TRABAJOS */
 .seccion1 {
+  margin: 50px;
+  margin-top: -40px;
+  margin-left: 50px;
   display: grid;
   grid-template-columns: 4, 100px;
   grid-template-rows: 100px 100px 100px;
   grid-template-areas: "img1 img2 img3 img4";
-  margin: 50px;
-  margin-top: -40px;
-  margin-left: 50px;
 }
 
 .seccion2 {
+  margin: 50px;
+  margin-top: 150px;
+  margin-left: 50px;
   display: grid;
   grid-template-columns: 4, 1fr;
   grid-template-rows: 100px 100px 100px;
   grid-template-areas: "img5 img6 img7 img8";
-  margin: 50px;
-  margin-top: 150px;
   margin-bottom: 300px;
-  margin-left: 50px;
 }
 
 .contenedor {
