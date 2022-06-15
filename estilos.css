@@ -17,6 +17,11 @@ header nav {
   margin: -18px;
   margin-right: 0px;
 }
+@-webkit-keyframes nav {
+  0% {
+    opacity: 0;
+  }
+}
 @keyframes nav {
   0% {
     opacity: 0;
@@ -26,9 +31,12 @@ header nav .color {
   color: aliceblue;
   font-size: small;
   text-decoration: none;
-  animation-name: nav;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
+  -webkit-animation-name: nav;
+          animation-name: nav;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 header .nav {
   color: white;
@@ -47,8 +55,11 @@ header .nav li:after {
   background-color: aliceblue;
   width: 90%;
   height: 3px;
-  clip-path: var(--clippy);
+  -webkit-clip-path: var(--clippy);
+          clip-path: var(--clippy);
+  transition: -webkit-clip-path 0.6s;
   transition: clip-path 0.6s;
+  transition: clip-path 0.6s, -webkit-clip-path 0.6s;
 }
 header .nav li:hover {
   --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -60,9 +71,18 @@ header img {
   margin-left: 39%;
   margin-top: 30px;
   transition: height 1s;
-  animation-name: Logo;
-  animation-iteration-count: 1;
-  animation-duration: 2s;
+  -webkit-animation-name: Logo;
+          animation-name: Logo;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+@-webkit-keyframes Logo {
+  0% {
+    margin-left: 0px;
+    opacity: 0;
+  }
 }
 @keyframes Logo {
   0% {
@@ -152,9 +172,12 @@ main .call {
   border-radius: 8px;
   transition: padding 0.5s;
   padding: 30px;
-  animation-name: Call;
-  animation-iteration-count: 1;
-  animation-duration: 3s;
+  -webkit-animation-name: Call;
+          animation-name: Call;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 main .call h2 {
   text-align: center;
@@ -183,6 +206,12 @@ main .call a {
 }
 main .call a:hover {
   background-color: #08556f;
+}
+@-webkit-keyframes Call {
+  0% {
+    opacity: 0;
+    margin-right: 700px;
+  }
 }
 @keyframes Call {
   0% {
@@ -520,18 +549,22 @@ article {
     height: 200px;
   }
   .header .logo {
-    margin-right: 100px;
+    margin-right: 60px;
   }
+
   .nav li {
-    margin-left: 30px;
+    margin-left: 20px;
   }
+
   .color {
-    margin: 10px;
+    margin: 8px;
   }
+
   /* media query SOCIAL BAR */
   .social-bar {
     font-size: 0.8rem;
   }
+
   /* media query INDEX */
   /* servicios */
   .servicios ul {
@@ -543,6 +576,7 @@ article {
     color: aliceblue;
     font-size: 15px;
   }
+
   /* Opiniones */
   .opiniones {
     width: auto;
@@ -555,6 +589,7 @@ article {
     margin-right: 100px;
     font-size: 17px;
   }
+
   .opinion textarea {
     margin-left: -60px;
     width: 300px;
@@ -562,6 +597,7 @@ article {
   .opinion input {
     margin-left: 1px;
   }
+
   /* media query GALERIA DE FOTOS */
   .seccion1 {
     display: flex;
@@ -569,12 +605,14 @@ article {
     margin: auto;
     margin-left: 180px;
   }
+
   .seccion2 {
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-left: 180px;
   }
+
   /* media query SOBRE NOSOTROS */
   .nosotros p {
     margin-right: -55px;
@@ -585,36 +623,44 @@ article {
   .nosotros img {
     width: 40%;
   }
+
   /* media query CONTACTO */
   .contacto {
     width: 300px;
     padding: 40px;
     border-radius: 8px;
   }
+
   .contacto h4 {
     font-size: 18px;
   }
+
   .contacto {
     font-size: 15px;
   }
+
   .contacto label {
     margin-left: 100px;
     font-size: 17px;
   }
+
   .contacto textarea {
     margin-left: 0px;
   }
+
   #enviar {
     margin-left: 5px;
     margin-right: 0;
   }
+
   /* media query ENCONTRANOS */
   .encontranos {
     font-size: 20px;
   }
+
   .mapa {
     width: 420px;
-    margin-left: 100px;
+    margin-left: 35px;
   }
 }
 /* MEDIA QUERY*/
@@ -627,21 +673,26 @@ article {
   .header .logo {
     margin-right: 80px;
   }
+
   .nav li {
     margin-left: 60px;
   }
+
   .color {
     font-size: 11px;
     margin: 10px;
   }
+
   /* media query SOCIAL BAR */
   .social-bar {
     font-size: 1rem;
   }
+
   /* Call */
   .call {
     height: auto;
   }
+
   /* Servicios */
   .servicios ul {
     width: auto;
@@ -651,6 +702,7 @@ article {
   .servicios li {
     font-size: 18px;
   }
+
   /* Opiniones */
   .opiniones h3 {
     margin-left: -70px;
@@ -658,6 +710,7 @@ article {
   .opiniones p {
     margin-left: -90px;
   }
+
   .opinion textarea {
     margin-left: -80px;
     width: 400px;
@@ -665,30 +718,39 @@ article {
   .opinion input {
     margin-left: 10px;
   }
+
   /* media query SOBRE NOSOTROS */
   .nosotros {
     height: 310px;
   }
-  #texto {
+  .nosotros p {
     margin-right: -55px;
-    font-size: 13px;
-    text-align: center;
+    margin-bottom: -180px;
+    font-size: 15px;
+    text-align: left;
   }
+  .nosotros img {
+    margin-bottom: -150px;
+  }
+
   /* media query GALERIA DE FOTOS */
   .seccion1 {
     display: grid;
     grid-template-rows: 450px 300px;
     grid-template-areas: "img1 img2" "img3 img4";
   }
+
   .seccion2 {
     display: grid;
     grid-template-rows: 450px 200px;
     grid-template-areas: "img5 img6" "img7 img8";
   }
+
   /* media query ENCONTRANOS */
   .encontranos {
     font-size: 20px;
   }
+
   .mapa {
     width: 450px;
     margin-left: 150px;
@@ -700,15 +762,18 @@ article {
     margin-top: 10px;
     height: 200px;
   }
+
   .nav li {
     margin: 10px;
   }
+
   /* Estilos index */
   /* Call */
   .opinion textarea {
     margin-left: -160px;
     width: 600px;
   }
+
   /* media query SOBRE NOSOTROS */
   .nosotros {
     height: 310px;
@@ -722,6 +787,7 @@ article {
   .nosotros img {
     margin-bottom: -250px;
   }
+
   /* media query GALERIA DE FOTOS */
   .seccion1 {
     margin-left: 100px;
@@ -729,16 +795,19 @@ article {
     grid-template-rows: 450px 300px;
     grid-template-areas: "img1 img2" "img3 img4";
   }
+
   .seccion2 {
     margin-left: 100px;
     display: grid;
     grid-template-rows: 450px 200px;
     grid-template-areas: "img5 img6" "img7 img8";
   }
+
   /* media query ENCONTRANOS */
   .encontranos {
     font-size: 20px;
   }
+
   .mapa {
     width: 450px;
     margin-left: 220px;
@@ -750,9 +819,11 @@ article {
     margin-top: 10px;
     height: 200px;
   }
+
   .nav li {
     margin-top: 120px;
   }
+
   /* media query SOBRE NOSOTROS */
   .nosotros p {
     margin-right: -50px;
@@ -768,20 +839,21 @@ article {
     grid-template-rows: 450px 300px;
     grid-template-areas: "img1 img2" "img3 img4";
   }
+
   .seccion2 {
     margin-left: 180px;
     display: grid;
     grid-template-rows: 450px 200px;
     grid-template-areas: "img5 img6" "img7 img8";
   }
+
   /* media query ENCONTRANOS */
   .encontranos {
     font-size: 25px;
   }
+
   .mapa {
     width: 550px;
     margin-left: 280px;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

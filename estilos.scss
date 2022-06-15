@@ -620,16 +620,16 @@ article {
         height: 200px;
 
         .logo {
-            margin-right: 100px;
+            margin-right: 60px;
         }
     }
 
     .nav li {
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     .color {
-        margin: 10px;
+        margin: 8px;
     }
 
     /* media query SOCIAL BAR */
@@ -748,7 +748,7 @@ article {
 
     .mapa {
         width: 420px;
-        margin-left: 100px;
+        margin-left: 35px;
     }
 }
 
@@ -823,12 +823,17 @@ article {
     /* media query SOBRE NOSOTROS */
     .nosotros {
         height: 310px;
-    }
 
-    #texto {
-        margin-right: -55px;
-        font-size: 13px;
-        text-align: center;
+        p {
+            margin-right: -55px;
+            margin-bottom: -180px;
+            font-size: 15px;
+            text-align: left;
+        }
+
+        img{
+            margin-bottom: -150px;
+        }
     }
 
 
@@ -870,7 +875,7 @@ article {
     }
 
     .nav li {
-        margin:10px;
+        margin: 10px;
     }
 
     /* Estilos index */
@@ -890,7 +895,8 @@ article {
             text-align: center;
             margin-bottom: -300px;
         }
-        img{
+
+        img {
             margin-bottom: -250px;
         }
     }
