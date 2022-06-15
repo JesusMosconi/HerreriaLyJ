@@ -4,7 +4,7 @@ $fondo: linear-gradient(to right top #2a6a71, #0e496c, #08556f, #166071, #2a6a71
 $font: sans-serif;
 
 /* Mapa de colores */
-$mapcolor:(
+$mapcolor: (
     facebook:#2E406E,
     instagram:#3F60A5,
     whatsapp:#37B839,
@@ -20,7 +20,7 @@ $mapcolor:(
 /* ESTILOS GENERALES */
 /* Header */
 header {
-    height: 145px;
+    height: 170px;
     width: 100%;
 
     /* Lista de busqueda */
@@ -52,7 +52,7 @@ header {
 
         li {
             padding: 15px;
-            margin-top: 96px;
+            margin-top: 125px;
             --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
         }
 
@@ -61,7 +61,6 @@ header {
             display: block;
             background-color: aliceblue;
             width: 90%;
-            margin-top: 3px;
             height: 3px;
             clip-path: var(--clippy);
             transition: clip-path .6s;
@@ -187,10 +186,10 @@ main {
         margin-right: 80px;
         margin-top: 30px;
         background-color: #0e4a6c98;
-        height: 200px;
+        height: auto;
         border-radius: 8px;
         transition: padding 0.5s;
-        padding: 10px;
+        padding: 30px;
         animation-name: Call;
         animation-iteration-count: 1;
         animation-duration: 3s;
@@ -236,7 +235,7 @@ main {
     }
 
     .call:hover {
-        padding: 20px;
+        padding: 40px;
     }
 
 }
@@ -379,7 +378,7 @@ article {
         @extend h1;
         font-size: 20px;
         margin-top: 30px;
-        
+
     }
 
     a {
@@ -499,11 +498,11 @@ article {
 
 /* estilo MIS TRABAJOS */
 
-@mixin secciones($margin, $margin-top, $margin-left){
+@mixin secciones($margin, $margin-top, $margin-left) {
     margin: $margin;
     margin-top: $margin-top;
     margin-left: $margin-left;
-} 
+}
 
 .seccion1 {
     @include secciones(50px, -40px, 50px);
@@ -617,21 +616,19 @@ article {
     /* media query HEADER */
 
     .header {
-        margin-top: 10px;
-        height: 180px;
-    }
+        margin-top: 15px;
+        height: 200px;
 
-    .logo {
-        height: 20px;
-        width: auto;
+        .logo {
+            margin-right: 100px;
+        }
     }
 
     .nav li {
-        margin-top: 120px;
+        margin-left: 30px;
     }
 
     .color {
-        font-size: 11px;
         margin: 10px;
     }
 
@@ -642,31 +639,47 @@ article {
 
     /* media query INDEX */
 
-    /* call */
-    .call {
-        height: auto;
-    }
-
     /* servicios */
-    ul.lista {
-        width: auto;
-        display: grid;
-        grid-template-columns: 150px 150px 150px;
-    }
+    .servicios {
+        ul {
+            width: auto;
+            display: grid;
+            grid-template-columns: 130px 150px 150px;
+        }
 
-    .lista li {
-        color: aliceblue;
-        font-size: 12px;
+
+        li {
+            color: aliceblue;
+            font-size: 15px;
+        }
     }
 
     /* Opiniones */
-    .opinion textarea {
-        margin-left: 0px;
-        width: 300px;
+    .opiniones {
+        width: auto;
+
+        h3 {
+            margin-right: 100px;
+            font-size: 20px;
+        }
+
+        p {
+            margin-right: 100px;
+            font-size: 17px;
+        }
     }
 
-    .opiniones input {
-        margin-left: 30px;
+
+    .opinion {
+        textarea {
+            margin-left: -60px;
+            width: 300px;
+        }
+
+
+        input {
+            margin-left: 1px;
+        }
     }
 
     /* media query GALERIA DE FOTOS */
@@ -686,17 +699,17 @@ article {
 
     /* media query SOBRE NOSOTROS */
     .nosotros {
-        height: 310px;
-    }
 
-    #texto {
-        margin-right: -55px;
-        font-size: 11px;
-        text-align: center;
-    }
+        p {
+            margin-right: -55px;
+            margin-bottom: -200px;
+            font-size: 15px;
+            text-align: left;
+        }
 
-    #imagen {
-        width: 40%;
+        img {
+            width: 40%;
+        }
     }
 
     /* media query CONTACTO */
@@ -745,16 +758,15 @@ article {
 
     .header {
         margin-top: 10px;
-        height: 180px;
-    }
+        height: 200px;
 
-    .logo {
-        height: 20px;
-        width: auto;
+        .logo {
+            margin-right: 80px;
+        }
     }
 
     .nav li {
-        margin-top: 120px;
+        margin-left: 60px;
     }
 
     .color {
@@ -773,24 +785,39 @@ article {
     }
 
     /* Servicios */
-    ul.lista {
-        width: auto;
-        display: grid;
-        grid-template-columns: 150px 150px 250px;
-    }
+    .servicios {
+        ul {
+            width: auto;
+            display: grid;
+            grid-template-columns: 150px 150px 250px;
+        }
 
-    .lista li {
-        font-size: 14px;
+
+        li {
+            font-size: 18px;
+        }
     }
 
     /* Opiniones */
-    .opinion textarea {
-        margin-left: -50px;
-        width: 400px;
+    .opiniones {
+        h3 {
+            margin-left: -70px;
+        }
+
+        p {
+            margin-left: -90px;
+        }
     }
 
-    .opiniones input {
-        margin-left: 30px;
+    .opinion {
+        textarea {
+            margin-left: -80px;
+            width: 400px;
+        }
+
+        input {
+            margin-left: 10px;
+        }
     }
 
     /* media query SOBRE NOSOTROS */
@@ -839,11 +866,11 @@ article {
 
     .header {
         margin-top: 10px;
-        height: 180px;
+        height: 200px;
     }
 
     .nav li {
-        margin-top: 120px;
+        margin:10px;
     }
 
     /* Estilos index */
@@ -856,12 +883,16 @@ article {
     /* media query SOBRE NOSOTROS */
     .nosotros {
         height: 310px;
-    }
 
-    #texto {
-        margin-right: -50px;
-        font-size: 13px;
-        text-align: center;
+        p {
+            margin-right: -50px;
+            font-size: 17px;
+            text-align: center;
+            margin-bottom: -300px;
+        }
+        img{
+            margin-bottom: -250px;
+        }
     }
 
     /* media query GALERIA DE FOTOS */
@@ -899,7 +930,7 @@ article {
 
     .header {
         margin-top: 10px;
-        height: 180px;
+        height: 200px;
     }
 
     .nav li {

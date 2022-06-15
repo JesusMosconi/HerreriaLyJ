@@ -8,7 +8,7 @@
 /* ESTILOS GENERALES */
 /* Header */
 header {
-  height: 145px;
+  height: 170px;
   width: 100%;
   /* Lista de busqueda */
   /* Logo */
@@ -38,7 +38,7 @@ header .nav {
 }
 header .nav li {
   padding: 15px;
-  margin-top: 96px;
+  margin-top: 125px;
   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 header .nav li:after {
@@ -46,7 +46,6 @@ header .nav li:after {
   display: block;
   background-color: aliceblue;
   width: 90%;
-  margin-top: 3px;
   height: 3px;
   clip-path: var(--clippy);
   transition: clip-path 0.6s;
@@ -149,10 +148,10 @@ main .call {
   margin-right: 80px;
   margin-top: 30px;
   background-color: rgba(14, 74, 108, 0.5960784314);
-  height: 200px;
+  height: auto;
   border-radius: 8px;
   transition: padding 0.5s;
-  padding: 10px;
+  padding: 30px;
   animation-name: Call;
   animation-iteration-count: 1;
   animation-duration: 3s;
@@ -192,7 +191,7 @@ main .call a:hover {
   }
 }
 main .call:hover {
-  padding: 20px;
+  padding: 40px;
 }
 
 /* Servicios */
@@ -517,18 +516,16 @@ article {
 @media only screen and (min-width: 499px) and (max-width: 650px) {
   /* media query HEADER */
   .header {
-    margin-top: 10px;
-    height: 180px;
+    margin-top: 15px;
+    height: 200px;
   }
-  .logo {
-    height: 20px;
-    width: auto;
+  .header .logo {
+    margin-right: 100px;
   }
   .nav li {
-    margin-top: 120px;
+    margin-left: 30px;
   }
   .color {
-    font-size: 11px;
     margin: 10px;
   }
   /* media query SOCIAL BAR */
@@ -536,27 +533,34 @@ article {
     font-size: 0.8rem;
   }
   /* media query INDEX */
-  /* call */
-  .call {
-    height: auto;
-  }
   /* servicios */
-  ul.lista {
+  .servicios ul {
     width: auto;
     display: grid;
-    grid-template-columns: 150px 150px 150px;
+    grid-template-columns: 130px 150px 150px;
   }
-  .lista li {
+  .servicios li {
     color: aliceblue;
-    font-size: 12px;
+    font-size: 15px;
   }
   /* Opiniones */
+  .opiniones {
+    width: auto;
+  }
+  .opiniones h3 {
+    margin-right: 100px;
+    font-size: 20px;
+  }
+  .opiniones p {
+    margin-right: 100px;
+    font-size: 17px;
+  }
   .opinion textarea {
-    margin-left: 0px;
+    margin-left: -60px;
     width: 300px;
   }
-  .opiniones input {
-    margin-left: 30px;
+  .opinion input {
+    margin-left: 1px;
   }
   /* media query GALERIA DE FOTOS */
   .seccion1 {
@@ -572,15 +576,13 @@ article {
     margin-left: 180px;
   }
   /* media query SOBRE NOSOTROS */
-  .nosotros {
-    height: 310px;
-  }
-  #texto {
+  .nosotros p {
     margin-right: -55px;
-    font-size: 11px;
-    text-align: center;
+    margin-bottom: -200px;
+    font-size: 15px;
+    text-align: left;
   }
-  #imagen {
+  .nosotros img {
     width: 40%;
   }
   /* media query CONTACTO */
@@ -620,14 +622,13 @@ article {
   /* media query HEADER */
   .header {
     margin-top: 10px;
-    height: 180px;
+    height: 200px;
   }
-  .logo {
-    height: 20px;
-    width: auto;
+  .header .logo {
+    margin-right: 80px;
   }
   .nav li {
-    margin-top: 120px;
+    margin-left: 60px;
   }
   .color {
     font-size: 11px;
@@ -642,21 +643,27 @@ article {
     height: auto;
   }
   /* Servicios */
-  ul.lista {
+  .servicios ul {
     width: auto;
     display: grid;
     grid-template-columns: 150px 150px 250px;
   }
-  .lista li {
-    font-size: 14px;
+  .servicios li {
+    font-size: 18px;
   }
   /* Opiniones */
+  .opiniones h3 {
+    margin-left: -70px;
+  }
+  .opiniones p {
+    margin-left: -90px;
+  }
   .opinion textarea {
-    margin-left: -50px;
+    margin-left: -80px;
     width: 400px;
   }
-  .opiniones input {
-    margin-left: 30px;
+  .opinion input {
+    margin-left: 10px;
   }
   /* media query SOBRE NOSOTROS */
   .nosotros {
@@ -691,10 +698,10 @@ article {
 @media only screen and (min-width: 801px) and (max-width: 950px) {
   .header {
     margin-top: 10px;
-    height: 180px;
+    height: 200px;
   }
   .nav li {
-    margin-top: 120px;
+    margin: 10px;
   }
   /* Estilos index */
   /* Call */
@@ -706,10 +713,14 @@ article {
   .nosotros {
     height: 310px;
   }
-  #texto {
+  .nosotros p {
     margin-right: -50px;
-    font-size: 13px;
+    font-size: 17px;
     text-align: center;
+    margin-bottom: -300px;
+  }
+  .nosotros img {
+    margin-bottom: -250px;
   }
   /* media query GALERIA DE FOTOS */
   .seccion1 {
@@ -737,7 +748,7 @@ article {
 @media only screen and (min-width: 951px) and (max-width: 1040px) {
   .header {
     margin-top: 10px;
-    height: 180px;
+    height: 200px;
   }
   .nav li {
     margin-top: 120px;
