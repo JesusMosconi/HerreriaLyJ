@@ -44,6 +44,19 @@ header {
         }
     }
 
+    /* Menu hamburguesa mobile */
+    .menu-icon img {
+        width: 50px;
+        height: 30px;
+        border-radius: 2px;
+    }
+
+    .menu-icon,
+    #check {
+        display: none;
+    }
+
+    /* Lista */
     .nav {
         color: white;
         list-style-type: none;
@@ -60,7 +73,7 @@ header {
             content: "";
             display: block;
             background-color: aliceblue;
-            width: 90%;
+            width: 100%;
             height: 3px;
             clip-path: var(--clippy);
             transition: clip-path .6s;
@@ -72,7 +85,7 @@ header {
     }
 
     /* Logo */
-    img {
+    .logo img {
         height: 100px;
         width: auto;
         float: left;
@@ -91,7 +104,7 @@ header {
         }
     }
 
-    img:hover {
+    .logo img:hover {
         height: 110px;
     }
 }
@@ -168,8 +181,6 @@ body {
     }
 
 }
-
-
 
 /* ESTILOS INDEX */
 /* Texto presentacion */
@@ -611,6 +622,61 @@ article {
 
 /* MEDIA QUERY  MOBIL */
 /* MEDIA QUERY MOBIL */
+@media (max-width:1040px) {
+    header {
+        .checkbtn {
+            display: block;
+        }
+
+        .menu-icon {
+            display: block;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 102;
+
+            img {
+                height: 30px;
+            }
+
+            img:hover {
+                height: 30px;
+            }
+        }
+
+        .nav {
+            display: block;
+            position: fixed;
+            top: 0px;
+            left: -100%;
+            background-image: linear-gradient(to right top, #2a6a71, #166071, #08556f, #0e496c, #1d3d65);
+            width: 100%;
+            height: 100vh;
+            right: 0;
+            z-index: 101;
+
+
+            li {
+                padding: 0;
+                margin-top: 130px;
+            }
+        }
+
+        nav .color {
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+    }
+
+    #check:checked~.nav {
+        left: 0;
+        transition: all 1s;
+    }
+}
+
 @media only screen and (min-width:300px) and (max-width:498px) {
     /* media query HEADER */
 
@@ -623,9 +689,6 @@ article {
         }
     }
 
-    .nav li {
-        margin-left: -25px;
-    }
 
     .color {
         margin: 8px;
@@ -824,9 +887,6 @@ article {
         }
     }
 
-    .nav li {
-        margin-left: 20px;
-    }
 
     .color {
         margin: 8px;
@@ -963,9 +1023,6 @@ article {
         }
     }
 
-    .nav li {
-        margin-left: 60px;
-    }
 
     .color {
         font-size: 11px;
@@ -1072,9 +1129,6 @@ article {
         height: 200px;
     }
 
-    .nav li {
-        margin: 10px;
-    }
 
     /* Estilos index */
     /* Call */
@@ -1137,9 +1191,6 @@ article {
         height: 200px;
     }
 
-    .nav li {
-        margin-top: 120px;
-    }
 
     /* media query SOBRE NOSOTROS */
 

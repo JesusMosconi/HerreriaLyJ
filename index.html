@@ -1,96 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Todo tipo de herreria, presupuesto, fabricacion en general: Rejas, portones, escaleras, estructuras. En todo Córdoba capital y alrededores.">
-    <meta name="keywords" content="LyJ, Herrero, Herreria, Herreria LyJ, Rejas, Portones, Portones corredizos, Escaleras, Acero, Hierro, Caño, Cordoba, Domicilio, Muebles, Deck, Sillas, Mesas, trabajos, Herreria en general, Herrero cordoba">
+    <meta name="description"
+        content="Todo tipo de herreria, presupuesto, fabricacion en general: Rejas, portones, escaleras, estructuras. En todo Córdoba capital y alrededores.">
+    <meta name="keywords"
+        content="LyJ, Herrero, Herreria, Herreria LyJ, Rejas, Portones, Portones corredizos, Escaleras, Acero, Hierro, Caño, Cordoba, Domicilio, Muebles, Deck, Sillas, Mesas, trabajos, Herreria en general, Herrero cordoba">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="menu-icon/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Tapestry&display=swap" rel="stylesheet">
     <title>Herreria L&J</title>
 </head>
+
 <body>
     <!-- Header, Logo, Titulo -->
     <header class="header">
-        <div class="logo"> 
+        <div class="logo">
             <a href="#">
                 <img src="./img/logo1.png" alt="Logo Herreria LyJ">
             </a>
         </div>
-            <nav>
-                <ul class="nav">
-                    <li><a class="color" href="pages/Sobrenosotros.html">Sobre nosotros</a></li>
-                    <li><a class="color" href="pages/mis trabajos.html">Mis trabajos</a></li>
-                    <li><a class="color" href="pages/contacto.html">Contacto</a></li>
-                    <li><a class="color" href="pages/encontranos.html">Encontranos</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <!-- Menu hamburguesa -->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src="img/menuicon.png" alt=""></i>
+            </label>
+            <!-- Secciones -->
+            <ul class="nav">
+                <li><a class="color" href="pages/Sobrenosotros.html">Sobre nosotros</a></li>
+                <li><a class="color" href="pages/mis trabajos.html">Mis trabajos</a></li>
+                <li><a class="color" href="pages/contacto.html">Contacto</a></li>
+                <li><a class="color" href="pages/encontranos.html">Encontranos</a></li>
+            </ul>
+        </nav>
     </header> <br>
-<br>
-<!-- MAIN -->
-<main>
-    <div class="call">
-        <h2>Herreria L&J</h2>
-        <p>Herrería L&J nace a principios del año 2013, forjada en un ámbito familiar en donde Padre e Hijo unen los conocimientos del primero. Contamos con una vasta experiencia y conocimientos los cuales ahora tratamos de volcarlos al servicio de nuestros clientes.</p>
-        <a href="./pages/Sobrenosotros.html">Más info</a>
-    </div>
-</main>
-
-
-<!-- Servicios -->
-<div class="servicios">
-    <h4>Servicios</h4>
-<br>
-<ul type="disc">
-    <li>Corte Láser CNC de todo tipo de materiales</li>
-    <li>Plegado de chapas de hasta 2,5 m.</li>
-    <li>Maquinaria de control numérico para el mecanizado   de todo tipo de materiales.</li>
-</ul>
-<ul>
-    <li>Soldado y armado de estructuras</li>
-    <li>Asistencia en diseño</li>
-    <li>Asistencia técnica</li>
-</ul>
-</div>
-<br><br>
-<!-- Imagen de Herrero -->
-<div class="herrero"></div>
-
-<!-- Opiniones -->
-
-<section class="opiniones">
-    <h3>Dejanos tu opinion sobre Herreria L&J</h3>
-    <p>Tu reseña es pública, por eso, ¡no incluyas material confidencial o de total privacidad!</p>
     <br>
-    <form action="" method="post" enctype="text/plain" class="opinion" netlify>
-        <textarea name="OPINIONES"  placeholder="Escribe.." cols="30" rows="10"></textarea>
-        <input type="submit" class="btn btn-green" value="Enviar">
-        <input type="reset" class="btn btn-green" value="Limpiar">
-    </form>
-</section>
-
-<article></article>
-
-<!-- Agradecimiento -->
-<div class="agradecimiento">
-    <h1>¡Gracias por visitarnos!</h1>
-    <p>para contactarnos, hacer click <a href="./pages/contacto.html">aquí</a></p>
-</div>
+    <!-- MAIN -->
+    <main>
+        <div class="call">
+            <h2>Herreria L&J</h2>
+            <p>Herrería L&J nace a principios del año 2013, forjada en un ámbito familiar en donde Padre e Hijo unen los
+                conocimientos del primero. Contamos con una vasta experiencia y conocimientos los cuales ahora tratamos
+                de volcarlos al servicio de nuestros clientes.</p>
+            <a href="./pages/Sobrenosotros.html">Más info</a>
+        </div>
+    </main>
 
 
-<!-- Redes sociales -->
-<div class="social-bar">
-    <a href="https://www.facebook.com/Herrería-LJ-1402611139950960/" class="icon icon-facebook" target="_blank"></a>
-    <a href="https://www.instagram.com/herrerialyj/?hl=es-la" class="icon icon-instagram" target="_blank"></a>
-    <a href="https://wa.me/c/5493517405700" class="icon icon-whatsapp" target="_blank"></a>
-</div>
+    <!-- Servicios -->
+    <div class="servicios">
+        <h4>Servicios</h4>
+        <br>
+        <ul type="disc">
+            <li>Corte Láser CNC de todo tipo de materiales</li>
+            <li>Plegado de chapas de hasta 2,5 m.</li>
+            <li>Maquinaria de control numérico para el mecanizado de todo tipo de materiales.</li>
+        </ul>
+        <ul>
+            <li>Soldado y armado de estructuras</li>
+            <li>Asistencia en diseño</li>
+            <li>Asistencia técnica</li>
+        </ul>
+    </div>
+    <br><br>
+    <!-- Imagen de Herrero -->
+    <div class="herrero"></div>
+
+    <!-- Opiniones -->
+
+    <section class="opiniones">
+        <h3>Dejanos tu opinion sobre Herreria L&J</h3>
+        <p>Tu reseña es pública, por eso, ¡no incluyas material confidencial o de total privacidad!</p>
+        <br>
+        <form action="" method="post" enctype="text/plain" class="opinion" netlify>
+            <textarea name="OPINIONES" placeholder="Escribe.." cols="30" rows="10"></textarea>
+            <input type="submit" class="btn btn-green" value="Enviar">
+            <input type="reset" class="btn btn-green" value="Limpiar">
+        </form>
+    </section>
+
+    <article></article>
+
+    <!-- Agradecimiento -->
+    <div class="agradecimiento">
+        <h1>¡Gracias por visitarnos!</h1>
+        <p>para contactarnos, hacer click <a href="./pages/contacto.html">aquí</a></p>
+    </div>
 
 
-<!-- Footer -->
-<footer>© Herreria L&J</footer> 
+    <!-- Redes sociales -->
+    <div class="social-bar">
+        <a href="https://www.facebook.com/Herrería-LJ-1402611139950960/" class="icon icon-facebook" target="_blank"></a>
+        <a href="https://www.instagram.com/herrerialyj/?hl=es-la" class="icon icon-instagram" target="_blank"></a>
+        <a href="https://wa.me/c/5493517405700" class="icon icon-whatsapp" target="_blank"></a>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>© Herreria L&J</footer>
 </body>
+
 </html>
