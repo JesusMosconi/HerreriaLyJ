@@ -7,6 +7,20 @@
 
 /* ESTILOS GENERALES */
 /* Header */
+html {
+  font-size: 16px;
+}
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 10px;
+  }
+}
+
 header {
   height: 170px;
   width: 100%;
@@ -308,7 +322,7 @@ form textarea {
 }
 form textarea:hover {
   background-color: #08556f;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Boton de enviar y limpiar*/
@@ -432,7 +446,8 @@ article {
   width: 100%;
   height: 400px;
   padding: 100px 100px;
-  margin-top: -20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
   line-height: 1.5;
   background: transparent;
   /* Imagen */
@@ -446,9 +461,14 @@ article {
   border: 3px solid transparent;
   border-radius: 8px;
 }
+@media screen and (max-width: 700px) {
+  .nosotros img {
+    visibility: hidden;
+  }
+}
 .nosotros p {
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 1rem;
   text-align: left;
   color: aliceblue;
 }
@@ -547,12 +567,16 @@ article {
 }
 
 .mapa {
-  margin: 50px;
-  margin-left: 360px;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 /* MEDIA QUERY  MOBIL */
 /* MEDIA QUERY MOBIL */
+/* Menu hamburguesa */
 @media (max-width: 1040px) {
   header .checkbtn {
     display: block;
@@ -599,11 +623,7 @@ article {
 }
 @media only screen and (min-width: 300px) and (max-width: 498px) {
   /* media query HEADER */
-  .header {
-    margin-top: 15px;
-    height: 200px;
-  }
-  .header .logo {
+  .logo {
     margin-right: 150px;
   }
 
@@ -645,75 +665,54 @@ article {
     width: auto;
   }
   .opinion textarea {
-    margin-left: -21px;
-    width: 150px;
+    margin-left: -30px;
+    width: 170px;
     height: 200px;
   }
   .opinion input {
     margin-left: 31px;
-    height: 30px;
-  }
-
-  /* media query GALERIA DE FOTOS */
-  .seccion1 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-left: 25px;
-  }
-
-  .seccion2 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-left: 25px;
-  }
-
-  /* media query SOBRE NOSOTROS */
-  .nosotros p {
-    margin-right: -55px;
-    margin-bottom: -200px;
-    font-size: 10px;
-    text-align: left;
-  }
-  .nosotros img {
-    width: 100px;
-  }
-
-  /* media query CONTACTO */
-  .contacto {
-    width: 220px;
-    padding: 40px;
-    border-radius: 8px;
-    font-size: 15px;
-  }
-  .contacto h4 {
-    font-size: 18px;
-  }
-  .contacto label {
-    margin-left: 60px;
-    font-size: 17px;
-  }
-  .contacto textarea {
-    width: 220px;
-    margin-left: 0px;
-  }
-
-  #enviar {
-    margin-left: 5px;
-    margin-right: 0;
-  }
-
-  /* media query ENCONTRANOS */
-  .encontranos {
-    font-size: 20px;
-  }
-
-  .mapa {
-    width: 220px;
-    margin-left: 30px;
+    height: 40px;
   }
 }
+/* media query GALERIA DE FOTOS */
+.seccion1 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-left: 25px;
+}
+
+.seccion2 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-left: 25px;
+}
+
+/* media query CONTACTO */
+.contacto {
+  width: 220px;
+  padding: 40px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+.contacto h4 {
+  font-size: 18px;
+}
+.contacto label {
+  margin-left: 60px;
+  font-size: 17px;
+}
+.contacto textarea {
+  width: 220px;
+  margin-left: 0px;
+}
+
+#enviar {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
 /* Mediaquery */
 @media only screen and (min-width: 431px) and (max-width: 498px) {
   /* Opinion */
@@ -728,11 +727,6 @@ article {
     margin-left: 20px;
   }
 
-  /* media query SOBRE NOSOTROS */
-  .nosotros p {
-    font-size: 15px;
-  }
-
   /* media query GALERIA DE FOTOS */
   .seccion1 {
     margin-left: 100px;
@@ -751,242 +745,173 @@ article {
   }
   .contacto textarea {
     width: 300px;
-  }
-
-  /* media query ENCONTRANOS */
-  .mapa {
-    width: 330px;
-    margin-left: 50px;
   }
 }
 @media only screen and (min-width: 499px) and (max-width: 650px) {
   /* media query HEADER */
-  .header {
-    margin-top: 15px;
-    height: 200px;
-  }
-  .header .logo {
+  .logo {
     margin-right: 60px;
   }
-
-  .color {
-    margin: 8px;
-  }
-
-  /* media query SOCIAL BAR */
-  .social-bar {
-    font-size: 0.8rem;
-  }
-
-  /* media query INDEX */
-  /* servicios */
-  .servicios ul {
-    width: auto;
-    display: grid;
-    grid-template-columns: 130px 150px 150px;
-  }
-  .servicios li {
-    color: aliceblue;
-    font-size: 15px;
-  }
-
-  /* Opiniones */
-  .opiniones {
-    width: auto;
-  }
-  .opiniones h3 {
-    margin-right: 100px;
-    font-size: 20px;
-  }
-  .opiniones p {
-    margin-right: 100px;
-    font-size: 17px;
-  }
-
-  .opinion textarea {
-    margin-left: -60px;
-    width: 300px;
-  }
-  .opinion input {
-    margin-left: 1px;
-  }
-
-  /* media query GALERIA DE FOTOS */
-  .seccion1 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-left: 180px;
-  }
-
-  .seccion2 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-left: 180px;
-  }
-
-  /* media query SOBRE NOSOTROS */
-  .nosotros p {
-    margin-right: -55px;
-    margin-bottom: -200px;
-    font-size: 15px;
-    text-align: left;
-  }
-  .nosotros img {
-    width: 40%;
-  }
-
-  /* media query CONTACTO */
-  .contacto {
-    width: 300px;
-    padding: 40px;
-    border-radius: 8px;
-    font-size: 15px;
-  }
-  .contacto h4 {
-    font-size: 18px;
-  }
-  .contacto label {
-    margin-left: 100px;
-    font-size: 17px;
-  }
-  .contacto textarea {
-    margin-left: 0px;
-  }
-
-  #enviar {
-    margin-left: 5px;
-    margin-right: 0;
-  }
-
-  /* media query ENCONTRANOS */
-  .encontranos {
-    font-size: 20px;
-  }
-
-  .mapa {
-    width: 420px;
-    margin-left: 35px;
-  }
 }
+.color {
+  margin: 8px;
+}
+
+/* media query SOCIAL BAR */
+.social-bar {
+  font-size: 0.8rem;
+}
+
+/* media query INDEX */
+/* servicios */
+.servicios ul {
+  width: auto;
+  display: grid;
+  grid-template-columns: 130px 150px 150px;
+}
+.servicios li {
+  color: aliceblue;
+  font-size: 15px;
+}
+
+/* Opiniones */
+.opiniones {
+  width: auto;
+}
+.opiniones h3 {
+  margin-right: 100px;
+  font-size: 20px;
+}
+.opiniones p {
+  margin-right: 100px;
+  font-size: 17px;
+}
+
+.opinion textarea {
+  margin-left: -60px;
+  width: 300px;
+}
+.opinion input {
+  margin-left: 1px;
+}
+
+/* media query GALERIA DE FOTOS */
+.seccion1 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-left: 180px;
+}
+
+.seccion2 {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-left: 180px;
+}
+
+/* media query CONTACTO */
+.contacto {
+  width: 300px;
+  padding: 40px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+.contacto h4 {
+  font-size: 18px;
+}
+.contacto label {
+  margin-left: 100px;
+  font-size: 17px;
+}
+.contacto textarea {
+  margin-left: 0px;
+}
+
+#enviar {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+/* media query ENCONTRANOS */
+.encontranos {
+  font-size: 20px;
+}
+
 /* MEDIA QUERY*/
 @media only screen and (min-width: 651px) and (max-width: 800px) {
   /* media query HEADER */
-  .header {
-    margin-top: 10px;
-    height: 200px;
-  }
-  .header .logo {
+  .logo {
     margin-right: 80px;
   }
-
-  .color {
-    font-size: 11px;
-    margin: 10px;
-  }
-
-  /* media query SOCIAL BAR */
-  .social-bar {
-    font-size: 1rem;
-  }
-
-  /* Call */
-  .call {
-    height: auto;
-  }
-
-  /* Servicios */
-  .servicios ul {
-    width: auto;
-    display: grid;
-    grid-template-columns: 150px 150px 250px;
-  }
-  .servicios li {
-    font-size: 18px;
-  }
-
-  /* Opiniones */
-  .opiniones h3 {
-    margin-left: -70px;
-  }
-  .opiniones p {
-    margin-left: -90px;
-  }
-
-  .opinion textarea {
-    margin-left: -80px;
-    width: 400px;
-  }
-  .opinion input {
-    margin-left: 10px;
-  }
-
-  /* media query SOBRE NOSOTROS */
-  .nosotros {
-    height: 310px;
-  }
-  .nosotros p {
-    margin-right: -55px;
-    margin-bottom: -180px;
-    font-size: 15px;
-    text-align: left;
-  }
-  .nosotros img {
-    margin-bottom: -150px;
-  }
-
-  /* media query GALERIA DE FOTOS */
-  .seccion1 {
-    display: grid;
-    grid-template-rows: 450px 300px;
-    grid-template-areas: "img1 img2" "img3 img4";
-  }
-
-  .seccion2 {
-    display: grid;
-    grid-template-rows: 450px 200px;
-    grid-template-areas: "img5 img6" "img7 img8";
-  }
-
-  /* media query ENCONTRANOS */
-  .encontranos {
-    font-size: 20px;
-  }
-
-  .mapa {
-    width: 450px;
-    margin-left: 150px;
-  }
 }
+.color {
+  font-size: 11px;
+  margin: 10px;
+}
+
+/* media query SOCIAL BAR */
+.social-bar {
+  font-size: 1rem;
+}
+
+/* Call */
+.call {
+  height: auto;
+}
+
+/* Servicios */
+.servicios ul {
+  width: auto;
+  display: grid;
+  grid-template-columns: 150px 150px 250px;
+}
+.servicios li {
+  font-size: 18px;
+}
+
+/* Opiniones */
+.opiniones h3 {
+  margin-left: -70px;
+}
+.opiniones p {
+  margin-left: -90px;
+}
+
+.opinion textarea {
+  margin-left: -80px;
+  width: 400px;
+}
+.opinion input {
+  margin-left: 10px;
+}
+
+/* media query GALERIA DE FOTOS */
+.seccion1 {
+  display: grid;
+  grid-template-rows: 450px 300px;
+  grid-template-areas: "img1 img2" "img3 img4";
+}
+
+.seccion2 {
+  display: grid;
+  grid-template-rows: 450px 200px;
+  grid-template-areas: "img5 img6" "img7 img8";
+}
+
+/* media query ENCONTRANOS */
+.encontranos {
+  font-size: 20px;
+}
+
 /* MEDIA QUERY */
 @media only screen and (min-width: 801px) and (max-width: 950px) {
-  .header {
-    margin-top: 10px;
-    height: 200px;
-  }
-
   /* Estilos index */
-  /* Call */
   .opinion textarea {
     margin-left: -160px;
     width: 600px;
   }
 
-  /* media query SOBRE NOSOTROS */
-  .nosotros {
-    height: 310px;
-  }
-  .nosotros p {
-    margin-right: -50px;
-    font-size: 17px;
-    text-align: center;
-    margin-bottom: -300px;
-  }
-  .nosotros img {
-    margin-bottom: -250px;
-  }
-
   /* media query GALERIA DE FOTOS */
   .seccion1 {
     margin-left: 100px;
@@ -1006,26 +931,8 @@ article {
   .encontranos {
     font-size: 20px;
   }
-
-  .mapa {
-    width: 450px;
-    margin-left: 220px;
-  }
 }
 /* MEDIA QUERY */
-@media only screen and (min-width: 951px) and (max-width: 1040px) {
-  .header {
-    margin-top: 10px;
-    height: 200px;
-  }
-
-  /* media query SOBRE NOSOTROS */
-  .nosotros p {
-    margin-right: -50px;
-    font-size: 20px;
-    text-align: left;
-  }
-}
 @media only screen and (min-width: 951px) and (max-width: 1125px) {
   /* Galeria de fotos */
   .seccion1 {
@@ -1045,10 +952,5 @@ article {
   /* media query ENCONTRANOS */
   .encontranos {
     font-size: 25px;
-  }
-
-  .mapa {
-    width: 550px;
-    margin-left: 280px;
   }
 }/*# sourceMappingURL=estilos.css.map */
