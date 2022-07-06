@@ -673,46 +673,46 @@ article {
     margin-left: 31px;
     height: 40px;
   }
-}
-/* media query GALERIA DE FOTOS */
-.seccion1 {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  margin-left: 25px;
-}
 
-.seccion2 {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  margin-left: 25px;
-}
+  /* media query GALERIA DE FOTOS */
+  .seccion1 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 25px;
+  }
 
-/* media query CONTACTO */
-.contacto {
-  width: 220px;
-  padding: 40px;
-  border-radius: 8px;
-  font-size: 15px;
-}
-.contacto h4 {
-  font-size: 18px;
-}
-.contacto label {
-  margin-left: 60px;
-  font-size: 17px;
-}
-.contacto textarea {
-  width: 220px;
-  margin-left: 0px;
-}
+  .seccion2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 25px;
+  }
 
-#enviar {
-  margin-left: 5px;
-  margin-right: 0;
-}
+  /* media query CONTACTO */
+  .contacto {
+    width: 220px;
+    padding: 40px;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+  .contacto h4 {
+    font-size: 18px;
+  }
+  .contacto label {
+    margin-left: 60px;
+    font-size: 17px;
+  }
+  .contacto textarea {
+    width: 220px;
+    margin-left: 0px;
+  }
 
+  #enviar {
+    margin-left: 5px;
+    margin-right: 0;
+  }
+}
 /* Mediaquery */
 @media only screen and (min-width: 431px) and (max-width: 498px) {
   /* Opinion */
@@ -752,158 +752,158 @@ article {
   .logo {
     margin-right: 60px;
   }
-}
-.color {
-  margin: 8px;
-}
 
-/* media query SOCIAL BAR */
-.social-bar {
-  font-size: 0.8rem;
-}
+  .color {
+    margin: 8px;
+  }
 
-/* media query INDEX */
-/* servicios */
-.servicios ul {
-  width: auto;
-  display: grid;
-  grid-template-columns: 130px 150px 150px;
-}
-.servicios li {
-  color: aliceblue;
-  font-size: 15px;
-}
+  /* media query SOCIAL BAR */
+  .social-bar {
+    font-size: 0.8rem;
+  }
 
-/* Opiniones */
-.opiniones {
-  width: auto;
-}
-.opiniones h3 {
-  margin-right: 100px;
-  font-size: 20px;
-}
-.opiniones p {
-  margin-right: 100px;
-  font-size: 17px;
-}
+  /* media query INDEX */
+  /* servicios */
+  .servicios ul {
+    width: auto;
+    display: grid;
+    grid-template-columns: 130px 150px 150px;
+  }
+  .servicios li {
+    color: aliceblue;
+    font-size: 15px;
+  }
 
-.opinion textarea {
-  margin-left: -60px;
-  width: 300px;
-}
-.opinion input {
-  margin-left: 1px;
-}
+  /* Opiniones */
+  .opiniones {
+    width: auto;
+  }
+  .opiniones h3 {
+    margin-right: 100px;
+    font-size: 20px;
+  }
+  .opiniones p {
+    margin-right: 100px;
+    font-size: 17px;
+  }
 
-/* media query GALERIA DE FOTOS */
-.seccion1 {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  margin-left: 180px;
-}
+  .opinion textarea {
+    margin-left: -60px;
+    width: 300px;
+  }
+  .opinion input {
+    margin-left: 1px;
+  }
 
-.seccion2 {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  margin-left: 180px;
-}
+  /* media query GALERIA DE FOTOS */
+  .seccion1 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 180px;
+  }
 
-/* media query CONTACTO */
-.contacto {
-  width: 300px;
-  padding: 40px;
-  border-radius: 8px;
-  font-size: 15px;
-}
-.contacto h4 {
-  font-size: 18px;
-}
-.contacto label {
-  margin-left: 100px;
-  font-size: 17px;
-}
-.contacto textarea {
-  margin-left: 0px;
-}
+  .seccion2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 180px;
+  }
 
-#enviar {
-  margin-left: 5px;
-  margin-right: 0;
-}
+  /* media query CONTACTO */
+  .contacto {
+    width: 300px;
+    padding: 40px;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+  .contacto h4 {
+    font-size: 18px;
+  }
+  .contacto label {
+    margin-left: 100px;
+    font-size: 17px;
+  }
+  .contacto textarea {
+    margin-left: 0px;
+  }
 
-/* media query ENCONTRANOS */
-.encontranos {
-  font-size: 20px;
-}
+  #enviar {
+    margin-left: 5px;
+    margin-right: 0;
+  }
 
+  /* media query ENCONTRANOS */
+  .encontranos {
+    font-size: 20px;
+  }
+}
 /* MEDIA QUERY*/
 @media only screen and (min-width: 651px) and (max-width: 800px) {
   /* media query HEADER */
   .logo {
     margin-right: 80px;
   }
-}
-.color {
-  font-size: 11px;
-  margin: 10px;
-}
 
-/* media query SOCIAL BAR */
-.social-bar {
-  font-size: 1rem;
-}
+  .color {
+    font-size: 11px;
+    margin: 10px;
+  }
 
-/* Call */
-.call {
-  height: auto;
-}
+  /* media query SOCIAL BAR */
+  .social-bar {
+    font-size: 1rem;
+  }
 
-/* Servicios */
-.servicios ul {
-  width: auto;
-  display: grid;
-  grid-template-columns: 150px 150px 250px;
-}
-.servicios li {
-  font-size: 18px;
-}
+  /* Call */
+  .call {
+    height: auto;
+  }
 
-/* Opiniones */
-.opiniones h3 {
-  margin-left: -70px;
-}
-.opiniones p {
-  margin-left: -90px;
-}
+  /* Servicios */
+  .servicios ul {
+    width: auto;
+    display: grid;
+    grid-template-columns: 150px 150px 250px;
+  }
+  .servicios li {
+    font-size: 18px;
+  }
 
-.opinion textarea {
-  margin-left: -80px;
-  width: 400px;
-}
-.opinion input {
-  margin-left: 10px;
-}
+  /* Opiniones */
+  .opiniones h3 {
+    margin-left: -70px;
+  }
+  .opiniones p {
+    margin-left: -90px;
+  }
 
-/* media query GALERIA DE FOTOS */
-.seccion1 {
-  display: grid;
-  grid-template-rows: 450px 300px;
-  grid-template-areas: "img1 img2" "img3 img4";
-}
+  .opinion textarea {
+    margin-left: -80px;
+    width: 400px;
+  }
+  .opinion input {
+    margin-left: 10px;
+  }
 
-.seccion2 {
-  display: grid;
-  grid-template-rows: 450px 200px;
-  grid-template-areas: "img5 img6" "img7 img8";
-}
+  /* media query GALERIA DE FOTOS */
+  .seccion1 {
+    display: grid;
+    grid-template-rows: 450px 300px;
+    grid-template-areas: "img1 img2" "img3 img4";
+  }
 
-/* media query ENCONTRANOS */
-.encontranos {
-  font-size: 20px;
-}
+  .seccion2 {
+    display: grid;
+    grid-template-rows: 450px 200px;
+    grid-template-areas: "img5 img6" "img7 img8";
+  }
 
+  /* media query ENCONTRANOS */
+  .encontranos {
+    font-size: 20px;
+  }
+}
 /* MEDIA QUERY */
 @media only screen and (min-width: 801px) and (max-width: 950px) {
   /* Estilos index */

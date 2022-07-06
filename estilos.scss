@@ -32,7 +32,6 @@ html {
     }
 }
 
-
 header {
     height: 170px;
     width: 100%;
@@ -142,9 +141,8 @@ body {
     }
 }
 
-
-
 /* Redes sociales */
+
 .social-bar {
     position: fixed;
     right: 0;
@@ -259,10 +257,7 @@ main {
     .call:hover {
         padding: 40px;
     }
-
 }
-
-
 
 /* Servicios */
 .servicios {
@@ -287,7 +282,6 @@ main {
         padding: 3px;
     }
 }
-
 
 /* Imagen de Herrero */
 .herrero {
@@ -325,7 +319,6 @@ main {
     }
 }
 
-
 form {
     margin: 0 auto;
     width: 300px;
@@ -352,7 +345,6 @@ form {
     }
 }
 
-
 /* Boton de enviar y limpiar*/
 
 .btn {
@@ -371,8 +363,6 @@ form {
 .btn:hover {
     background-color: map-get($mapcolor, hover);
 }
-
-
 
 /* Imagen de otro herrero */
 article {
@@ -477,8 +467,6 @@ article {
 #limpiar {
     margin-left: 5px;
 }
-
-
 
 /* estilo SOBRE NOSOTROS */
 /* Cuadro */
@@ -628,7 +616,8 @@ article {
     margin-left: 50px;
 }
 
-/* MEDIA QUERY  MOBIL */ /* MEDIA QUERY MOBIL */
+/* MEDIA QUERY  MOBIL */
+/* MEDIA QUERY MOBIL */
 
 /* Menu hamburguesa */
 @media (max-width:1040px) {
@@ -749,48 +738,49 @@ article {
             height: 40px;
         }
     }
-}
 
-/* media query GALERIA DE FOTOS */
-.seccion1 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-left: 25px;
-}
 
-.seccion2 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-left: 25px;
-}
-
-/* media query CONTACTO */
-.contacto {
-    width: 220px;
-    padding: 40px;
-    border-radius: 8px;
-    font-size: 15px;
-
-    h4 {
-        font-size: 18px;
+    /* media query GALERIA DE FOTOS */
+    .seccion1 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-left: 25px;
     }
 
-    label {
-        margin-left: 60px;
-        font-size: 17px;
+    .seccion2 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-left: 25px;
     }
 
-    textarea {
+    /* media query CONTACTO */
+    .contacto {
         width: 220px;
-        margin-left: 0px;
-    }
-}
+        padding: 40px;
+        border-radius: 8px;
+        font-size: 15px;
 
-#enviar {
-    margin-left: 5px;
-    margin-right: 0;
+        h4 {
+            font-size: 18px;
+        }
+
+        label {
+            margin-left: 60px;
+            font-size: 17px;
+        }
+
+        textarea {
+            width: 220px;
+            margin-left: 0px;
+        }
+    }
+
+    #enviar {
+        margin-left: 5px;
+        margin-right: 0;
+    }
 }
 
 /* Mediaquery */
@@ -839,104 +829,105 @@ article {
     .logo {
         margin-right: 60px;
     }
-}
 
-.color {
-    margin: 8px;
-}
 
-/* media query SOCIAL BAR */
-.social-bar {
-    font-size: 0.8rem;
-}
+    .color {
+        margin: 8px;
+    }
 
-/* media query INDEX */
+    /* media query SOCIAL BAR */
+    .social-bar {
+        font-size: 0.8rem;
+    }
 
-/* servicios */
-.servicios {
-    ul {
+    /* media query INDEX */
+
+    /* servicios */
+    .servicios {
+        ul {
+            width: auto;
+            display: grid;
+            grid-template-columns: 130px 150px 150px;
+        }
+
+        li {
+            color: aliceblue;
+            font-size: 15px;
+        }
+    }
+
+    /* Opiniones */
+    .opiniones {
         width: auto;
-        display: grid;
-        grid-template-columns: 130px 150px 150px;
+
+        h3 {
+            margin-right: 100px;
+            font-size: 20px;
+        }
+
+        p {
+            margin-right: 100px;
+            font-size: 17px;
+        }
     }
 
-    li {
-        color: aliceblue;
+    .opinion {
+        textarea {
+            margin-left: -60px;
+            width: 300px;
+        }
+
+
+        input {
+            margin-left: 1px;
+        }
+    }
+
+    /* media query GALERIA DE FOTOS */
+    .seccion1 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-left: 180px;
+    }
+
+    .seccion2 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-left: 180px;
+    }
+
+    /* media query CONTACTO */
+    .contacto {
+        width: 300px;
+        padding: 40px;
+        border-radius: 8px;
         font-size: 15px;
+
+        h4 {
+            font-size: 18px;
+        }
+
+        label {
+            margin-left: 100px;
+            font-size: 17px;
+        }
+
+        textarea {
+            margin-left: 0px;
+        }
     }
-}
 
-/* Opiniones */
-.opiniones {
-    width: auto;
+    #enviar {
+        margin-left: 5px;
+        margin-right: 0;
+    }
 
-    h3 {
-        margin-right: 100px;
+    /* media query ENCONTRANOS */
+    .encontranos {
         font-size: 20px;
     }
-
-    p {
-        margin-right: 100px;
-        font-size: 17px;
-    }
-}
-
-.opinion {
-    textarea {
-        margin-left: -60px;
-        width: 300px;
-    }
-
-
-    input {
-        margin-left: 1px;
-    }
-}
-
-/* media query GALERIA DE FOTOS */
-.seccion1 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-left: 180px;
-}
-
-.seccion2 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-left: 180px;
-}
-
-/* media query CONTACTO */
-.contacto {
-    width: 300px;
-    padding: 40px;
-    border-radius: 8px;
-    font-size: 15px;
-
-    h4 {
-        font-size: 18px;
-    }
-
-    label {
-        margin-left: 100px;
-        font-size: 17px;
-    }
-
-    textarea {
-        margin-left: 0px;
-    }
-}
-
-#enviar {
-    margin-left: 5px;
-    margin-right: 0;
-}
-
-/* media query ENCONTRANOS */
-.encontranos {
-    font-size: 20px;
 }
 
 /* MEDIA QUERY*/
@@ -946,7 +937,7 @@ article {
     .logo {
         margin-right: 80px;
     }
-}
+
 
 .color {
     font-size: 11px;
@@ -1019,7 +1010,7 @@ article {
     font-size: 20px;
 }
 
-
+}
 
 /* MEDIA QUERY */
 @media only screen and (min-width:801px) and (max-width:950px) {
